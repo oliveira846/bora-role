@@ -159,7 +159,16 @@ h1{
 
     font-size: 4em;
 }
-#busca .cor_diferente{
+h2{
+    font-family: var(--secundary-font);
+    font-weight: 300;
+    text-align: center;
+
+    color: var(--roxo);
+
+    font-size: 3em;
+}
+.verde{
     color: var(--verde-claro);
 }
 #busca input{
