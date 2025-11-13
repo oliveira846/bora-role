@@ -78,21 +78,30 @@
         </section>
         <section id="tags">
             <div class="linha">
-                <a href="">BALADAS</a>
-                <a href="">BARES</a>
-                <a href="#aqui" onclick="clicarAoVivo()">AO VIVO</a>
-                <a href="">AO VIVO</a>
-                <a href="">AO VIVO</a>
-                <a href="">AO VIVO</a>
+                <a href="#tags" onclick="organizarTags('baladas')">BALADAS</a>
+                <a href="#tags" onclick="organizarTags('bares')">BARES</a>
+                <a href="#tags" onclick="organizarTags('musicaaovivo')">MUSICA AO VIVO</a>
+                <a href="#tags" onclick="organizarTags('comidajaponesa')">COMIDA JAPONESA</a>
+                <a href="#tags" onclick="organizarTags('churrascaria')">CHURRASCARIA</a>
+                <a href="#tags" onclick="organizarTags('vegano')">VEGANO</a>
+                <a href="#tags" onclick="organizarTags('frutosdomar')">FRUTOS DO MAR</a>
+                <a href="#tags" onclick="organizarTags('lgbt+')">LGBT+</a>
+                <a href="#tags" onclick="organizarTags('flashback')">FLASH BACK</a>
+                <a href="#tags" onclick="organizarTags('culinariabahiana')">CULINARIA BAHIANA</a>
             </div>
             <div class="linha">
-                <a href="">RESTAURANTE</a>
-                <a href="">RESTAURANTE</a>
-                <a href="">RESTAURANTE</a>
-                <a href="">ROCK</a>
-                <a href="">COVER</a>
-                <a href="">PAGODE</a>
+                <a href="#tags" onclick="organizarTags('restaurante')">RESTAURANTE</a>
+                <a href="#tags" onclick="organizarTags('rock')">ROCK</a>
+                <a href="#tags" onclick="organizarTags('pagode')">PAGODE</a>
+                <a href="#tags" onclick="organizarTags('todasasidades')">TODAS AS IDADES</a>
+                <a href="#tags" onclick="organizarTags('sertanejo')">SERTANEJO</a>
+                <a href="#tags" onclick="organizarTags('geek')">GEEK</a>
+                <a href="#tags" onclick="organizarTags('rodizio')">RODIZIO</a>
+                <a href="#tags" onclick="organizarTags('karaoke')">KARAOKE</a>
+                <a href="#tags" onclick="organizarTags('openbar')">OPEN BAR</a>
+                <a href="#tags" onclick="organizarTags('culinariaitaliana')">CULINARIA ITALIANA</a>
             </div>
+
         </section>
 
 
@@ -101,242 +110,750 @@
         <section id="empresas">
             <h1>ROLES</h1>
             <div id="empresas_card_espaco">
-                <div class="empresas_card">
+                <div class="empresas_card todasasidades frutosdomar musicaaovivo">
                     <img src="img/pexels-larissafarber-13423143.jpg" alt="logo da empresa">
                     <div class="empresas_card_conteudo">
                         <div class="empresas_card_conteudo_flex">
-                            <a href="">Empresa1</a>
-                            <p>00h - 00h</p>
+                            <h3>Restaurante Sabor do Mar</h3>
                         </div>
                         <div class="empresas_card_conteudo_flex" id="card_coluna">
-                            <p>Rua Amador Bueno, 900, Centro, Santos-SP</p>
+                            <p>, Santos.</p>
+                            <p>Ter a Dom, 11h30 às 16h e 18h às 23h.</p>
                         </div>
                         <div class="empresas_card_conteudo_flex">
                             <div class="empresas_card_tags">
-                                <p class="empresas_card_tags_texto">BALADA</p>
-                                <p class="empresas_card_tags_texto">AO VIVO</p>
-                                <p class="empresas_card_tags_texto">ROCK</p>
+                                <p class="empresas_card_tags_texto">TODAS AS IDADES</p>
+                                <p class="empresas_card_tags_texto">FRUTOS DO MAR</p>
+                                <p class="empresas_card_tags_texto">MUSICA AO VIVO</p>
                             </div>
                             <div id="rate">
                                 <i class="bi bi-star-fill"></i>
                                 <span>5</span>
-
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="empresas_card">
+
+
+                <div class="empresas_card musicaaovivo culinariaitaliana restaurante">
                     <img src="img/pexels-larissafarber-13423143.jpg" alt="logo da empresa">
                     <div class="empresas_card_conteudo">
                         <div class="empresas_card_conteudo_flex">
-                            <a href="">Empresa2</a>
-                            <p>00h - 00h</p>
+                            <h3>Cantina Nonna Maria</h3>
                         </div>
                         <div class="empresas_card_conteudo_flex" id="card_coluna">
-                            <p>Rua Amador Bueno, 900, Centro, Santos-SP</p>
+                            <p>Rua do Comércio, 55, Centro Histórico, Santos.</p>
+                            <p>Qua a Seg, 12h às 15h30 e 19h às 00h.</p>
                         </div>
                         <div class="empresas_card_conteudo_flex">
                             <div class="empresas_card_tags">
-                                <p class="empresas_card_tags_texto">BALADA</p>
-                                <p class="empresas_card_tags_texto">AO VIVO</p>
-                                <p class="empresas_card_tags_texto">ROCK</p>
+                                <p class="empresas_card_tags_texto">MUSICA AO VIVO</p>
+                                <p class="empresas_card_tags_texto">CULINARIA ITALIANA</p>
+                                <p class="empresas_card_tags_texto">RESTAURANTE</p>
                             </div>
                             <div id="rate">
                                 <i class="bi bi-star-fill"></i>
                                 <span>5</span>
-
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="empresas_card ao_vivo" id="ao_vivo">
+
+
+                <div class="empresas_card baladas rock karaoke">
                     <img src="img/pexels-larissafarber-13423143.jpg" alt="logo da empresa">
                     <div class="empresas_card_conteudo">
                         <div class="empresas_card_conteudo_flex">
-                            <a href="">Empresa3</a>
-                            <p>00h - 00h</p>
+                            <h3>Empório São Vicente</h3>
                         </div>
                         <div class="empresas_card_conteudo_flex" id="card_coluna">
-                            <p>Rua Amador Bueno, 900, Centro, Santos-SP</p>
+                            <p>Av. Ana Costa, 450, Gonzaga, Santos.</p>
+                            <p>Todos os dias, 10h às 23h.</p>
                         </div>
                         <div class="empresas_card_conteudo_flex">
                             <div class="empresas_card_tags">
-                                <p class="empresas_card_tags_texto">BALADA</p>
-                                <p class="empresas_card_tags_texto">AO VIVO</p>
+                                <p class="empresas_card_tags_texto">BALADAS</p>
                                 <p class="empresas_card_tags_texto">ROCK</p>
+                                <p class="empresas_card_tags_texto">KARAOKE</p>
                             </div>
                             <div id="rate">
                                 <i class="bi bi-star-fill"></i>
                                 <span>5</span>
-
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="empresas_card">
+
+
+                <div class="empresas_card pagode culinariabahiana rodizio">
                     <img src="img/pexels-larissafarber-13423143.jpg" alt="logo da empresa">
                     <div class="empresas_card_conteudo">
                         <div class="empresas_card_conteudo_flex">
-                            <a href="">Empresa4</a>
-                            <p>00h - 00h</p>
+                            <h3>Tempeiro Baiano</h3>
                         </div>
                         <div class="empresas_card_conteudo_flex" id="card_coluna">
-                            <p>Rua Amador Bueno, 900, Centro, Santos-SP</p>
+                            <p>Rua Jorge Tibiriçá, 220, Pompéia, São Vicente.</p>
+                            <p>Ter a Dom, 11h às 22h.</p>
                         </div>
                         <div class="empresas_card_conteudo_flex">
                             <div class="empresas_card_tags">
-                                <p class="empresas_card_tags_texto">BALADA</p>
-                                <p class="empresas_card_tags_texto">AO VIVO</p>
-                                <p class="empresas_card_tags_texto">ROCK</p>
+                                <p class="empresas_card_tags_texto">PAGODE</p>
+                                <p class="empresas_card_tags_texto">CULINARIA BAHIANA</p>
+                                <p class="empresas_card_tags_texto">RODIZIO</p>
                             </div>
                             <div id="rate">
                                 <i class="bi bi-star-fill"></i>
                                 <span>5</span>
-
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="empresas_card ao_vivo" id="ao_vivo">
+
+
+                <div class="empresas_card karaoke churrascaria lgbt+">
                     <img src="img/pexels-larissafarber-13423143.jpg" alt="logo da empresa">
                     <div class="empresas_card_conteudo">
                         <div class="empresas_card_conteudo_flex">
-                            <a href="">Empresa5</a>
-                            <p>00h - 00h</p>
+                            <h3>Fogo & Lenha Churrascaria</h3>
                         </div>
                         <div class="empresas_card_conteudo_flex" id="card_coluna">
-                            <p>Rua Amador Bueno, 900, Centro, Santos-SP</p>
+                            <p>Av. Pres. Wilson, 100, José Menino, Santos.</p>
+                            <p>Ter a Sáb, 11h30 às 16h e 18h30 à 00h; Dom, 11h30 às 17h.</p>
                         </div>
                         <div class="empresas_card_conteudo_flex">
                             <div class="empresas_card_tags">
-                                <p class="empresas_card_tags_texto">BALADA</p>
-                                <p class="empresas_card_tags_texto">AO VIVO</p>
-                                <p class="empresas_card_tags_texto">ROCK</p>
+                                <p class="empresas_card_tags_texto">KARAOKE</p>
+                                <p class="empresas_card_tags_texto">CHURRASCARIA</p>
+                                <p class="empresas_card_tags_texto">LGBT+</p>
                             </div>
                             <div id="rate">
                                 <i class="bi bi-star-fill"></i>
                                 <span>5</span>
-
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="empresas_card ao_vivo">
+
+
+                <div class="empresas_card sertanejo comidajaponesa openbar">
                     <img src="img/pexels-larissafarber-13423143.jpg" alt="logo da empresa">
                     <div class="empresas_card_conteudo">
                         <div class="empresas_card_conteudo_flex">
-                            <a href="">Empresa6</a>
-                            <p>00h - 00h</p>
+                            <h3>Jardim Sushi</h3>
                         </div>
                         <div class="empresas_card_conteudo_flex" id="card_coluna">
-                            <p>Rua Amador Bueno, 900, Centro, Santos-SP</p>
+                            <p>Rua Euclides da Cunha, 77, Boqueirão, Santos.</p>
+                            <p>Ter a Dom, 18h às 00h.</p>
                         </div>
                         <div class="empresas_card_conteudo_flex">
                             <div class="empresas_card_tags">
-                                <p class="empresas_card_tags_texto">BALADA</p>
-                                <p class="empresas_card_tags_texto">AO VIVO</p>
-                                <p class="empresas_card_tags_texto">ROCK</p>
+                                <p class="empresas_card_tags_texto">SERTANEJO</p>
+                                <p class="empresas_card_tags_texto">COMIDA JAPONESA</p>
+                                <p class="empresas_card_tags_texto">OPEN BAR</p>
                             </div>
                             <div id="rate">
                                 <i class="bi bi-star-fill"></i>
                                 <span>5</span>
-
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="empresas_card">
+
+
+                <div class="empresas_card vegano frutosdomar rock">
                     <img src="img/pexels-larissafarber-13423143.jpg" alt="logo da empresa">
                     <div class="empresas_card_conteudo">
                         <div class="empresas_card_conteudo_flex">
-                            <a href="">Empresa7</a>
-                            <p>00h - 00h</p>
+                            <h3>Cais do Porto</h3>
                         </div>
                         <div class="empresas_card_conteudo_flex" id="card_coluna">
-                            <p>Rua Amador Bueno, 900, Centro, Santos-SP</p>
+                            <p>Av. Almirante Cochrane, 210, Encruzilhada, Santos.</p>
+                            <p>Seg a Sáb, 11h às 23h.</p>
                         </div>
                         <div class="empresas_card_conteudo_flex">
                             <div class="empresas_card_tags">
-                                <p class="empresas_card_tags_texto">BALADA</p>
-                                <p class="empresas_card_tags_texto">AO VIVO</p>
+                                <p class="empresas_card_tags_texto">VEGANO</p>
+                                <p class="empresas_card_tags_texto">FRUTOS DO MAR</p>
                                 <p class="empresas_card_tags_texto">ROCK</p>
                             </div>
                             <div id="rate">
                                 <i class="bi bi-star-fill"></i>
                                 <span>5</span>
-
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="empresas_card" id="ao_vivo">
+
+
+                <div class="empresas_card rock vegano karaoke">
                     <img src="img/pexels-larissafarber-13423143.jpg" alt="logo da empresa">
                     <div class="empresas_card_conteudo">
                         <div class="empresas_card_conteudo_flex">
-                            <a href="">Empresa8</a>
-                            <p>00h - 00h</p>
+                            <h3>Veggie Soul</h3>
                         </div>
                         <div class="empresas_card_conteudo_flex" id="card_coluna">
-                            <p>Rua Amador Bueno, 900, Centro, Santos-SP</p>
+                            <p>Rua Brás Cubas, 300, Vila Mathias, Santos.</p>
+                            <p>** Ter a Dom, 11h30 às 22h.</p>
                         </div>
                         <div class="empresas_card_conteudo_flex">
                             <div class="empresas_card_tags">
-                                <p class="empresas_card_tags_texto">BALADA</p>
-                                <p class="empresas_card_tags_texto">AO VIVO</p>
                                 <p class="empresas_card_tags_texto">ROCK</p>
+                                <p class="empresas_card_tags_texto">VEGANO</p>
+                                <p class="empresas_card_tags_texto">KARAOKE</p>
                             </div>
                             <div id="rate">
                                 <i class="bi bi-star-fill"></i>
                                 <span>5</span>
-
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="empresas_card">
+
+
+                <div class="empresas_card flashback restaurante sertanejo">
                     <img src="img/pexels-larissafarber-13423143.jpg" alt="logo da empresa">
                     <div class="empresas_card_conteudo">
                         <div class="empresas_card_conteudo_flex">
-                            <a href="">Empresa9</a>
-                            <p>00h - 00h</p>
+                            <h3>Forno a Lenha da Vila</h3>
                         </div>
                         <div class="empresas_card_conteudo_flex" id="card_coluna">
-                            <p>Rua Amador Bueno, 900, Centro, Santos-SP</p>
+                            <p>Praça das Bandeiras, 88, Vila Belmiro, Santos.</p>
+                            <p>Ter a Dom, 18h à 01h.</p>
                         </div>
                         <div class="empresas_card_conteudo_flex">
                             <div class="empresas_card_tags">
-                                <p class="empresas_card_tags_texto">BALADA</p>
-                                <p class="empresas_card_tags_texto">AO VIVO</p>
-                                <p class="empresas_card_tags_texto">ROCK</p>
+                                <p class="empresas_card_tags_texto">FLASH BACK</p>
+                                <p class="empresas_card_tags_texto">RESTAURANTE</p>
+                                <p class="empresas_card_tags_texto">SERTANEJO</p>
                             </div>
                             <div id="rate">
                                 <i class="bi bi-star-fill"></i>
                                 <span>5</span>
-
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="empresas_card" id="ao_vivo">
+
+
+                <div class="empresas_card lgbt+ geek rock">
                     <img src="img/pexels-larissafarber-13423143.jpg" alt="logo da empresa">
                     <div class="empresas_card_conteudo">
                         <div class="empresas_card_conteudo_flex">
-                            <a href="">Empresa10</a>
-                            <p>00h - 00h</p>
+                            <h3>Sabores do Vale</h3>
                         </div>
                         <div class="empresas_card_conteudo_flex" id="card_coluna">
-                            <p>Rua Amador Bueno, 900, Centro, Santos-SP</p>
+                            <p>Estrada do Mar, 1500, Rádio Club, Santos.</p>
+                            <p>Qua a Seg, 12h às 16h e 19h às 23h.</p>
                         </div>
                         <div class="empresas_card_conteudo_flex">
                             <div class="empresas_card_tags">
-                                <p class="empresas_card_tags_texto">BALADA</p>
-                                <p class="empresas_card_tags_texto">AO VIVO</p>
+                                <p class="empresas_card_tags_texto">LGBT+</p>
+                                <p class="empresas_card_tags_texto">GEEK</p>
                                 <p class="empresas_card_tags_texto">ROCK</p>
                             </div>
                             <div id="rate">
                                 <i class="bi bi-star-fill"></i>
                                 <span>5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+
+                <div class="empresas_card churrascaria karaoke culinariabahiana">
+                    <img src="img/pexels-larissafarber-13423143.jpg" alt="logo da empresa">
+                    <div class="empresas_card_conteudo">
+                        <div class="empresas_card_conteudo_flex">
+                            <h3>Boteco do Neto</h3>
+                        </div>
+                        <div class="empresas_card_conteudo_flex" id="card_coluna">
+                            <p>Rua Augusto Severo, 10, Aparecida, Santos.</p>
+                            <p>Seg a Dom, 11h à 00h.</p>
+                        </div>
+                        <div class="empresas_card_conteudo_flex">
+                            <div class="empresas_card_tags">
+                                <p class="empresas_card_tags_texto">CHURRASCARIA</p>
+                                <p class="empresas_card_tags_texto">KARAOKE</p>
+                                <p class="empresas_card_tags_texto">CULINARIA BAHIANA</p>
+                            </div>
+                            <div id="rate">
+                                <i class="bi bi-star-fill"></i>
+                                <span>5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="empresas_card bares culinariabahiana sertanejo">
+                    <img src="img/pexels-larissafarber-13423143.jpg" alt="logo da empresa">
+                    <div class="empresas_card_conteudo">
+                        <div class="empresas_card_conteudo_flex">
+                            <h3>Cervejaria Artesanal Cais</h3>
+                        </div>
+                        <div class="empresas_card_conteudo_flex" id="card_coluna">
+                            <p>Rua do Andradas, 33, Centro, Santos.</p>
+                            <p>Ter a Dom, 17h à 01h.</p>
+                        </div>
+                        <div class="empresas_card_conteudo_flex">
+                            <div class="empresas_card_tags">
+                                <p class="empresas_card_tags_texto">BARES</p>
+                                <p class="empresas_card_tags_texto">CULINARIA BAHIANA</p>
+                                <p class="empresas_card_tags_texto">SERTANEJO</p>
+                            </div>
+                            <div id="rate">
+                                <i class="bi bi-star-fill"></i>
+                                <span>5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="empresas_card frutosdomar rock churrascaria">
+                    <img src="img/pexels-larissafarber-13423143.jpg" alt="logo da empresa">
+                    <div class="empresas_card_conteudo">
+                        <div class="empresas_card_conteudo_flex">
+                            <h3>Bar do Porto</h3>
+                        </div>
+                        <div class="empresas_card_conteudo_flex" id="card_coluna">
+                            <p>Av. Conselheiro Nébias, 700, Encruzilhada, Santos.</p>
+                            <p>Seg a Sáb, 10h à 00h.</p>
+                        </div>
+                        <div class="empresas_card_conteudo_flex">
+                            <div class="empresas_card_tags">
+                                <p class="empresas_card_tags_texto">FRUTOS DO MAR</p>
+                                <p class="empresas_card_tags_texto">ROCK</p>
+                                <p class="empresas_card_tags_texto">CHURRASCARIA</p>
+                            </div>
+                            <div id="rate">
+                                <i class="bi bi-star-fill"></i>
+                                <span>5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="empresas_card culinariabahiana churrascaria bares">
+                    <img src="img/pexels-larissafarber-13423143.jpg" alt="logo da empresa">
+                    <div class="empresas_card_conteudo">
+                        <div class="empresas_card_conteudo_flex">
+                            <h3>Toco do Samba</h3>
+                        </div>
+                        <div class="empresas_card_conteudo_flex" id="card_coluna">
+                            <p>Rua da Paz, 120, São Vicente.</p>
+                            <p>Qua a Dom, 19h à 02h.</p>
+                        </div>
+                        <div class="empresas_card_conteudo_flex">
+                            <div class="empresas_card_tags">
+                                <p class="empresas_card_tags_texto">CULINARIA BAHIANA</p>
+                                <p class="empresas_card_tags_texto">CHURRASCARIA</p>
+                                <p class="empresas_card_tags_texto">BARES</p>
+                            </div>
+                            <div id="rate">
+                                <i class="bi bi-star-fill"></i>
+                                <span>5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="empresas_card comidajaponesa vegano geek">
+                    <img src="img/pexels-larissafarber-13423143.jpg" alt="logo da empresa">
+                    <div class="empresas_card_conteudo">
+                        <div class="empresas_card_conteudo_flex">
+                            <h3>The Old Pub</h3>
+                        </div>
+                        <div class="empresas_card_conteudo_flex" id="card_coluna">
+                            <p>Rua Santa Catarina, 55, Boqueirão, Santos.</p>
+                            <p>Ter a Dom, 18h à 02h.</p>
+                        </div>
+                        <div class="empresas_card_conteudo_flex">
+                            <div class="empresas_card_tags">
+                                <p class="empresas_card_tags_texto">COMIDA JAPONESA</p>
+                                <p class="empresas_card_tags_texto">VEGANO</p>
+                                <p class="empresas_card_tags_texto">GEEK</p>
+                            </div>
+                            <div id="rate">
+                                <i class="bi bi-star-fill"></i>
+                                <span>5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="empresas_card culinariaitaliana frutosdomar musicaaovivo">
+                    <img src="img/pexels-larissafarber-13423143.jpg" alt="logo da empresa">
+                    <div class="empresas_card_conteudo">
+                        <div class="empresas_card_conteudo_flex">
+                            <h3>Varanda do Mar</h3>
+                        </div>
+                        <div class="empresas_card_conteudo_flex" id="card_coluna">
+                            <p>Av. da Praia, 200, Gonzaga, Santos.</p>
+                            <p>Todos os dias, 12h à 00h.</p>
+                        </div>
+                        <div class="empresas_card_conteudo_flex">
+                            <div class="empresas_card_tags">
+                                <p class="empresas_card_tags_texto">CULINARIA ITALIANA</p>
+                                <p class="empresas_card_tags_texto">FRUTOS DO MAR</p>
+                                <p class="empresas_card_tags_texto">MUSICA AO VIVO</p>
+                            </div>
+                            <div id="rate">
+                                <i class="bi bi-star-fill"></i>
+                                <span>5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="empresas_card geek sertanejo rodizio">
+                    <img src="img/pexels-larissafarber-13423143.jpg" alt="logo da empresa">
+                    <div class="empresas_card_conteudo">
+                        <div class="empresas_card_conteudo_flex">
+                            <h3>Armazém do Campo</h3>
+                        </div>
+                        <div class="empresas_card_conteudo_flex" id="card_coluna">
+                            <p>Rua São Bento, 450, Centro, Santos.</p>
+                            <p>Qua a Seg, 19h à 01h.</p>
+                        </div>
+                        <div class="empresas_card_conteudo_flex">
+                            <div class="empresas_card_tags">
+                                <p class="empresas_card_tags_texto">GEEK</p>
+                                <p class="empresas_card_tags_texto">SERTANEJO</p>
+                                <p class="empresas_card_tags_texto">RODIZIO</p>
+                            </div>
+                            <div id="rate">
+                                <i class="bi bi-star-fill"></i>
+                                <span>5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="empresas_card openbar rock bares">
+                    <img src="img/pexels-larissafarber-13423143.jpg" alt="logo da empresa">
+                    <div class="empresas_card_conteudo">
+                        <div class="empresas_card_conteudo_flex">
+                            <h3>Galeria do Rock</h3>
+                        </div>
+                        <div class="empresas_card_conteudo_flex" id="card_coluna">
+                            <p>Rua General Câmara, 99, Vila Mathias, Santos.</p>
+                            <p>Ter a Dom, 18h à 02h.</p>
+                        </div>
+                        <div class="empresas_card_conteudo_flex">
+                            <div class="empresas_card_tags">
+                                <p class="empresas_card_tags_texto">OPEN BAR</p>
+                                <p class="empresas_card_tags_texto">ROCK</p>
+                                <p class="empresas_card_tags_texto">BARES</p>
+                            </div>
+                            <div id="rate">
+                                <i class="bi bi-star-fill"></i>
+                                <span>5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="empresas_card rodizio frutosdomar bares">
+                    <img src="img/pexels-larissafarber-13423143.jpg" alt="logo da empresa">
+                    <div class="empresas_card_conteudo">
+                        <div class="empresas_card_conteudo_flex">
+                            <h3>Trapiche 33</h3>
+                        </div>
+                        <div class="empresas_card_conteudo_flex" id="card_coluna">
+                            <p>Rua do Trapiche, 33, Valongo, Santos.</p>
+                            <p>Ter a Dom, 17h à 00h.</p>
+                        </div>
+                        <div class="empresas_card_conteudo_flex">
+                            <div class="empresas_card_tags">
+                                <p class="empresas_card_tags_texto">RODIZIO</p>
+                                <p class="empresas_card_tags_texto">FRUTOS DO MAR</p>
+                                <p class="empresas_card_tags_texto">BARES</p>
+                            </div>
+                            <div id="rate">
+                                <i class="bi bi-star-fill"></i>
+                                <span>5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="empresas_card restaurante geek karaoke">
+                    <img src="img/pexels-larissafarber-13423143.jpg" alt="logo da empresa">
+                    <div class="empresas_card_conteudo">
+                        <div class="empresas_card_conteudo_flex">
+                            <h3>Pé no Saco</h3>
+                        </div>
+                        <div class="empresas_card_conteudo_flex" id="card_coluna">
+                            <p>Av. Pres. Wilson, 800, José Menino, Santos.</p>
+                            <p>Todos os dias, 09h à 00h.</p>
+                        </div>
+                        <div class="empresas_card_conteudo_flex">
+                            <div class="empresas_card_tags">
+                                <p class="empresas_card_tags_texto">RESTAURANTE</p>
+                                <p class="empresas_card_tags_texto">GEEK</p>
+                                <p class="empresas_card_tags_texto">KARAOKE</p>
+                            </div>
+                            <div id="rate">
+                                <i class="bi bi-star-fill"></i>
+                                <span>5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="empresas_card sertanejo lgbt+ baladas">
+                    <img src="img/pexels-larissafarber-13423143.jpg" alt="logo da empresa">
+                    <div class="empresas_card_conteudo">
+                        <div class="empresas_card_conteudo_flex">
+                            <h3>Club 1909</h3>
+                        </div>
+                        <div class="empresas_card_conteudo_flex" id="card_coluna">
+                            <p>Rua Princesa Isabel, 1909, Boqueirão, Santos.</p>
+                            <p>Sex e Sáb, 23h às 06h.</p>
+                        </div>
+                        <div class="empresas_card_conteudo_flex">
+                            <div class="empresas_card_tags">
+                                <p class="empresas_card_tags_texto">SERTANEJO</p>
+                                <p class="empresas_card_tags_texto">LGBT+</p>
+                                <p class="empresas_card_tags_texto">BALADAS</p>
+                            </div>
+                            <div id="rate">
+                                <i class="bi bi-star-fill"></i>
+                                <span>5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="empresas_card culinariaitaliana musicaaovivo restaurante">
+                    <img src="img/pexels-larissafarber-13423143.jpg" alt="logo da empresa">
+                    <div class="empresas_card_conteudo">
+                        <div class="empresas_card_conteudo_flex">
+                            <h3>Dockside</h3>
+                        </div>
+                        <div class="empresas_card_conteudo_flex" id="card_coluna">
+                            <p>Av. Almirante Cochrane, 800, Encruzilhada, Santos.</p>
+                            <p>Sáb, 22h às 05h.</p>
+                        </div>
+                        <div class="empresas_card_conteudo_flex">
+                            <div class="empresas_card_tags">
+                                <p class="empresas_card_tags_texto">CULINARIA ITALIANA</p>
+                                <p class="empresas_card_tags_texto">MUSICA AO VIVO</p>
+                                <p class="empresas_card_tags_texto">RESTAURANTE</p>
+                            </div>
+                            <div id="rate">
+                                <i class="bi bi-star-fill"></i>
+                                <span>5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="empresas_card sertanejo rodizio culinariaitaliana">
+                    <img src="img/pexels-larissafarber-13423143.jpg" alt="logo da empresa">
+                    <div class="empresas_card_conteudo">
+                        <div class="empresas_card_conteudo_flex">
+                            <h3>Sertanejo Mania</h3>
+                        </div>
+                        <div class="empresas_card_conteudo_flex" id="card_coluna">
+                            <p>Av. Francisco Glicério, 1500, Gonzaga, Santos.</p>
+                            <p>Sex e Sáb, 23h às 05h.</p>
+                        </div>
+                        <div class="empresas_card_conteudo_flex">
+                            <div class="empresas_card_tags">
+                                <p class="empresas_card_tags_texto">SERTANEJO</p>
+                                <p class="empresas_card_tags_texto">RODIZIO</p>
+                                <p class="empresas_card_tags_texto">CULINARIA ITALIANA</p>
+                            </div>
+                            <div id="rate">
+                                <i class="bi bi-star-fill"></i>
+                                <span>5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="empresas_card rock culinariaitaliana bares">
+                    <img src="img/pexels-larissafarber-13423143.jpg" alt="logo da empresa">
+                    <div class="empresas_card_conteudo">
+                        <div class="empresas_card_conteudo_flex">
+                            <h3>Havana Club</h3>
+                        </div>
+                        <div class="empresas_card_conteudo_flex" id="card_coluna">
+                            <p>Rua do Comércio, 200, Centro Histórico, Santos.</p>
+                            <p>Sex e Sáb, 22h às 04h.</p>
+                        </div>
+                        <div class="empresas_card_conteudo_flex">
+                            <div class="empresas_card_tags">
+                                <p class="empresas_card_tags_texto">ROCK</p>
+                                <p class="empresas_card_tags_texto">CULINARIA ITALIANA</p>
+                                <p class="empresas_card_tags_texto">BARES</p>
+                            </div>
+                            <div id="rate">
+                                <i class="bi bi-star-fill"></i>
+                                <span>5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="empresas_card karaoke rodizio sertanejo">
+                    <img src="img/pexels-larissafarber-13423143.jpg" alt="logo da empresa">
+                    <div class="empresas_card_conteudo">
+                        <div class="empresas_card_conteudo_flex">
+                            <h3>Underground</h3>
+                        </div>
+                        <div class="empresas_card_conteudo_flex" id="card_coluna">
+                            <p>Travessa da Lapa, 15, Vila Nova, Santos.</p>
+                            <p>Sáb, 23h às 06h.</p>
+                        </div>
+                        <div class="empresas_card_conteudo_flex">
+                            <div class="empresas_card_tags">
+                                <p class="empresas_card_tags_texto">KARAOKE</p>
+                                <p class="empresas_card_tags_texto">RODIZIO</p>
+                                <p class="empresas_card_tags_texto">SERTANEJO</p>
+                            </div>
+                            <div id="rate">
+                                <i class="bi bi-star-fill"></i>
+                                <span>5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="empresas_card sertanejo lgbt+ musicaaovivo">
+                    <img src="img/pexels-larissafarber-13423143.jpg" alt="logo da empresa">
+                    <div class="empresas_card_conteudo">
+                        <div class="empresas_card_conteudo_flex">
+                            <h3>Pop!</h3>
+                        </div>
+                        <div class="empresas_card_conteudo_flex" id="card_coluna">
+                            <p>Av. Ana Costa, 1000, Gonzaga, Santos.</p>
+                            <p>Qui, Sex e Sáb, 23h às 05h.</p>
+                        </div>
+                        <div class="empresas_card_conteudo_flex">
+                            <div class="empresas_card_tags">
+                                <p class="empresas_card_tags_texto">SERTANEJO</p>
+                                <p class="empresas_card_tags_texto">LGBT+</p>
+                                <p class="empresas_card_tags_texto">MUSICA AO VIVO</p>
+                            </div>
+                            <div id="rate">
+                                <i class="bi bi-star-fill"></i>
+                                <span>5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="empresas_card churrascaria flashback todasasidades">
+                    <img src="img/pexels-larissafarber-13423143.jpg" alt="logo da empresa">
+                    <div class="empresas_card_conteudo">
+                        <div class="empresas_card_conteudo_flex">
+                            <h3>Marquise</h3>
+                        </div>
+                        <div class="empresas_card_conteudo_flex" id="card_coluna">
+                            <p>Av. Bartolomeu de Gusmão, 100, Ponta da Praia, Santos.</p>
+                            <p>Sex e Sáb, 22h às 04h.</p>
+                        </div>
+                        <div class="empresas_card_conteudo_flex">
+                            <div class="empresas_card_tags">
+                                <p class="empresas_card_tags_texto">CHURRASCARIA</p>
+                                <p class="empresas_card_tags_texto">FLASH BACK</p>
+                                <p class="empresas_card_tags_texto">TODAS AS IDADES</p>
+                            </div>
+                            <div id="rate">
+                                <i class="bi bi-star-fill"></i>
+                                <span>5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="empresas_card pagode karaoke frutosdomar">
+                    <img src="img/pexels-larissafarber-13423143.jpg" alt="logo da empresa">
+                    <div class="empresas_card_conteudo">
+                        <div class="empresas_card_conteudo_flex">
+                            <h3>Forró do Porto</h3>
+                        </div>
+                        <div class="empresas_card_conteudo_flex" id="card_coluna">
+                            <p>Rua do Paço, 50, Valongo, Santos.</p>
+                            <p>Sex e Sáb, 22h às 04h.</p>
+                        </div>
+                        <div class="empresas_card_conteudo_flex">
+                            <div class="empresas_card_tags">
+                                <p class="empresas_card_tags_texto">PAGODE</p>
+                                <p class="empresas_card_tags_texto">KARAOKE</p>
+                                <p class="empresas_card_tags_texto">FRUTOS DO MAR</p>
+                            </div>
+                            <div id="rate">
+                                <i class="bi bi-star-fill"></i>
+                                <span>5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="empresas_card pagode churrascaria geek">
+                    <img src="img/pexels-larissafarber-13423143.jpg" alt="logo da empresa">
+                    <div class="empresas_card_conteudo">
+                        <div class="empresas_card_conteudo_flex">
+                            <h3>The 80's Club</h3>
+                        </div>
+                        <div class="empresas_card_conteudo_flex" id="card_coluna">
+                            <p>Rua XV de Novembro, 300, Centro, Santos.</p>
+                            <p>Sáb, 22h às 04h.</p>
+                        </div>
+                        <div class="empresas_card_conteudo_flex">
+                            <div class="empresas_card_tags">
+                                <p class="empresas_card_tags_texto">PAGODE</p>
+                                <p class="empresas_card_tags_texto">CHURRASCARIA</p>
+                                <p class="empresas_card_tags_texto">GEEK</p>
+                            </div>
+                            <div id="rate">
+                                <i class="bi bi-star-fill"></i>
+                                <span>5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="empresas_card flashback restaurante culinariaitaliana">
+                    <img src="img/pexels-larissafarber-13423143.jpg" alt="logo da empresa">
+                    <div class="empresas_card_conteudo">
+                        <div class="empresas_card_conteudo_flex">
+                            <h3>Skye Lounge</h3>
+                        </div>
+                        <div class="empresas_card_conteudo_flex" id="card_coluna">
+                            <p>Topo do Edifício Plaza, Av. Pres. Wilson, 500, José Menino, Santos.</p>
+                            <p>Qua a Sáb, 19h à 02h.</p>
+                        </div>
+                        <div class="empresas_card_conteudo_flex">
+                            <div class="empresas_card_tags">
+                                <p class="empresas_card_tags_texto">FLASH BACK</p>
+                                <p class="empresas_card_tags_texto">RESTAURANTE</p>
+                                <p class="empresas_card_tags_texto">CULINARIA ITALIANA</p>
+                            </div>
+                            <div id="rate">
+                                <i class="bi bi-star-fill"></i>
+                                <span>5</span>
                             </div>
                         </div>
                     </div>
@@ -407,7 +924,7 @@
         </aside>
     </footer>
 
-    
+
 </body>
 
 </html>

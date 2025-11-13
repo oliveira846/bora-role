@@ -290,6 +290,11 @@ h2{
     display: flex;
     justify-content: space-between;
 }
+.empresas_card_conteudo_flex h3{
+    font-size: 1.5rem;
+    font-family: var(--secundary-font);
+    font-weight: 400;
+}
 #card_coluna{
     flex-direction: column;
 }
@@ -316,6 +321,8 @@ h2{
     background-color: var(--marrom-claro);
     padding: 1px 7px;
     border-radius: 20px;
+
+    font-size: 8px;
 }
 
 #rate{
