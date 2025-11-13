@@ -183,15 +183,60 @@ h2{
     border-radius: 20px;
     border: 2px solid var(--verde-claro);
 }
+
+/* Principais roles */
+
 #principal_role{
     margin-top: 60px
 }
-#principal_role_carossel{
-    height: 500px;
-    background-color: var(--roxo);
+#principal_role_content{
+    height: 600px;
+    
     margin-top: 40px
 }
+#principal_role_view{
+    width: 60%;
+    height: 500px;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+
+    border: 3px solid var(--marrom-claro);
+
+    position: relative;
+
+    border-radius: 10px;
+}
+
+#principal_role_position{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+    position: absolute;
+
+    top: 420px;
+
+    
+}
+
+.principal_role_box{
+    width: 160px;
+    height: 160px;
+
+    border: 2px solid var(--roxo-escuro);
+
+    border-radius: 20px;
+
+    transition: 1s;
+}
+.principal_role_box:hover{
+    transform: scale(1.3);
+}
 /* Empresas */
 
 #empresas{
