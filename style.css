@@ -662,7 +662,7 @@ footer {
 @media only screen and (max-width: 600px) {
     .empresas_card {
         width: 90%;
-        height: 210px;
+        height: fit-content;
 
         display: flex;
         flex-direction: row;
@@ -678,7 +678,7 @@ footer {
     .empresas_card img {
 
         width: 80px;
-        
+        height: 80px;
         margin: 0px;
 
 
