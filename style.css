@@ -540,12 +540,12 @@ footer {
         height: fit-content;
 
         justify-content: space-between;
-        
+
 
         position: relative;
         top: 0;
 
-        z-index: 2; 
+        z-index: 2;
 
         overflow: hidden;
     }
@@ -698,6 +698,15 @@ footer {
 /* Tablet */
 
 @media only screen and (max-width: 768px) {
+    #tags {
+        margin-top: 50px;
+        padding: 0px 10px;
+        display: flex;
+        flex-direction: column;
+
+        justify-content: space-around;
+
+    }
 
     #tags a {
         text-decoration: none;
