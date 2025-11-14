@@ -1,9 +1,8 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-:root{
+:root {
     /* Fonts */
 
     --main-font: "Tuffy", sans-serif;
@@ -20,19 +19,20 @@
     --cinza: #D3D3D3;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: var(--main-font);
-    
+
 }
 
 /* ------------------------------------- Medias ------------------------------------- */
 
-#medias{
+#medias {
     position: fixed;
     top: 20%;
     left: 96%;
@@ -47,11 +47,13 @@ body{
     flex-direction: column;
     align-items: center;
 }
-#medias i{
+
+#medias i {
     font-size: 2em;
     color: white;
 }
-#medias p{
+
+#medias p {
     color: white;
     text-align: center;
     margin-bottom: 5px;
@@ -60,29 +62,32 @@ body{
 
 /* ------------------------------------- Header ------------------------------------- */
 
-header{
+header {
     background-color: #D3D3D3;
 
     /* Display */
 
     display: flex;
     justify-content: space-between;
-    padding: 0px 50px 10px 50px;  
+    padding: 0px 50px 10px 50px;
 
     position: sticky;
     top: 0;
 
     z-index: 2;
 }
-#logo img{
+
+#logo img {
     width: 180px;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-nav menu{
+
+nav menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -91,47 +96,54 @@ nav menu{
     text-decoration: none;
 
 }
-menu a{
+
+menu a {
     text-decoration: none;
     color: var(--roxo);
     margin: 0px 20px;
-    
-    font-size: 1.3em; 
-    
-    
+
+    font-size: 1.3em;
+
+
 }
-menu a:hover{
+
+menu a:hover {
     border-bottom: 2px solid var(--roxo-escuro);
-    
+
 }
-#log{
+
+#log {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 20px;
     padding-top: 40PX;
 }
-#log a{
+
+#log a {
     text-decoration: none;
-    
+
 }
-#botao_login{
+
+#botao_login {
     background-color: var(--verde-claro);
     padding: 5px 25px;
     border-radius: 20px;
     text-align: center;
-    color: white; 
+    color: white;
     font-size: 1.2em;
 
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.623);
 
     transition: 0.3s;
 }
-#botao_login:hover{
+
+#botao_login:hover {
     background-color: var(--verde-escuro);
-    
+
 }
-#cadastre_se{
+
+#cadastre_se {
     text-align: center;
     margin-top: 5px;
     text-decoration: none;
@@ -140,17 +152,15 @@ menu a:hover{
 
 /* ------------------------------------- Main ------------------------------------- */
 
-#busca{
-    width: 700px;
+#busca {
+
     margin: auto;
     margin-top: 80px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
 }
-h1{
+
+h1 {
     font-family: var(--secundary-font);
     font-weight: 300;
     text-align: center;
@@ -159,7 +169,8 @@ h1{
 
     font-size: 4em;
 }
-h2{
+
+h2 {
     font-family: var(--secundary-font);
     font-weight: 300;
     text-align: center;
@@ -168,34 +179,26 @@ h2{
 
     font-size: 3em;
 }
-.verde{
+
+.verde {
     color: var(--verde-claro);
 }
-#busca input{
-    width: 600px;
 
-    margin-top: 20px;
-    padding: 5px 10px;
-    
-    font-weight: bold;
-    color: var(--roxo-escuro);
-
-    border-radius: 20px;
-    border: 2px solid var(--verde-claro);
-}
 
 /* Principais roles */
 
-#principal_role{
+#principal_role {
     margin-top: 60px
 }
-#principal_role_content{
+
+#principal_role_content {
     height: 600px;
-    
+
     margin-top: 40px
 }
-#principal_role_view{
-    width: 60%;
+
+#principal_role_view {
+    width: 70%;
     height: 500px;
 
     display: flex;
@@ -212,7 +215,7 @@ h2{
     border-radius: 10px;
 }
 
-#principal_role_position{
+#principal_role_position {
     display: flex;
     width: 100%;
     justify-content: space-around;
@@ -221,10 +224,10 @@ h2{
 
     top: 420px;
 
-    
+
 }
 
-.principal_role_box{
+.principal_role_box {
     width: 160px;
     height: 160px;
 
@@ -234,32 +237,36 @@ h2{
 
     transition: 1s;
 }
-.principal_role_box:hover{
+
+.principal_role_box:hover {
     transform: scale(1.3);
 }
-/* Empresas */
 
-#empresas{
-    width: 90%;
-    
+/**************************************************** Empresas ******************************************************/
+
+#empresas {
+    width: 95%;
+
     margin: auto;
     margin-top: 60px;
 }
-#empresas_card_espaco{
+
+#empresas_card_espaco {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 
-    
+
     padding: 20px;
 
-    
+
 }
-.empresas_card{
+
+.empresas_card {
     width: 500px;
-    height: 150px;
-    
+
+
     display: flex;
 
     border: 2px solid var(--marrom-claro);
@@ -270,13 +277,15 @@ h2{
 
     margin: 20px;
 }
-.empresas_card img{
+
+.empresas_card img {
     width: 200px;
     height: 100%;
 
-    
+
 }
-.empresas_card_conteudo{
+
+.empresas_card_conteudo {
     width: 100%;
     height: 100%;
 
@@ -286,58 +295,69 @@ h2{
     flex-direction: column;
     justify-content: space-between;
 }
-.empresas_card_conteudo_flex{
+
+.empresas_card_conteudo_flex {
     display: flex;
     justify-content: space-between;
 }
-.empresas_card_conteudo_flex h3{
+
+.empresas_card_conteudo_flex h3 {
     font-size: 1.5rem;
     font-family: var(--secundary-font);
     font-weight: 400;
 }
-#card_coluna{
+
+#card_coluna {
     flex-direction: column;
 }
-#card_coluna p{
+
+#card_coluna p {
     margin-top: 5px;
 }
-.empresas_card_conteudo a{
+
+.empresas_card_conteudo a {
     text-decoration: none;
     color: black;
     font-size: 2em;
 }
-.empresas_card_tags{
+
+.empresas_card_tags {
     display: flex;
 
     align-items: center;
     justify-content: space-between;
 
-    width: 70%;
+    gap: 2px;
 
     margin-top: 5px;
-    
+
 }
-.empresas_card_tags_texto{
+
+.empresas_card_tags_texto {
     background-color: var(--marrom-claro);
     padding: 1px 7px;
     border-radius: 20px;
 
     font-size: 8px;
+
 }
 
-#rate{
+#rate {
     display: flex;
     align-items: center;
 }
-#rate span{
+
+#rate span {
     margin: 0px 5px;
 }
-#rate i{
+
+#rate i {
     color: var(--marrom-claro);
 }
+
 /* ------------------------------------- Tags ------------------------------------- */
 
-#tags{
+#tags {
     margin-top: 50px;
 
     display: flex;
@@ -346,15 +366,17 @@ h2{
     justify-content: space-around;
 
 }
-#tags .linha{
-    display: flex;
 
+#tags .linha {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
-#tags a{
+
+#tags a {
     text-decoration: none;
     background-color: var(--verde-claro);
-    color: white;   
+    color: white;
 
 
     padding: 3px 10px;
@@ -367,24 +389,25 @@ h2{
     animation: movimentaTags 3s linear infinite alternate;
 }
 
-@keyframes movimentaTags{
-    50%{
+@keyframes movimentaTags {
+    50% {
         transform: translateX(-20px);
     }
-    100%{
+
+    100% {
         taransform: translateX(20px);
     }
 }
 
 /* ------------------------------------- Footer ------------------------------------- */
 
-footer{
+footer {
     background-color: var(--roxo);
 
     margin-top: 50px;
 
     height: 300px;
-    
+
     display: grid;
 
     grid-template-columns: repeat(16, 1fr);
@@ -392,24 +415,26 @@ footer{
     font-family: var(--secundary-font);
     font-weight: 200;
 }
-#footer_logo{
+
+#footer_logo {
     display: flex;
 
     justify-content: center;
     align-items: center;
 
     grid-column: 1 / 5;
-    
+
     margin-bottom: 30px;
 }
-#footer_logo img{
-    width: 250px;  
+
+#footer_logo img {
+    width: 250px;
 }
 
 
 
 
-#footer_pages{
+#footer_pages {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -417,67 +442,277 @@ footer{
 
     grid-column: 5 / 9;
 }
-#footer_pages h3{
+
+#footer_pages h3 {
     color: white;
 
     margin-bottom: 15px;
-    
+
     font-family: var(--secundary-font);
     font-weight: 400;
-    
+
     font-size: 20px;
 }
-#footer_pages a{
+
+#footer_pages a {
     text-decoration: none;
     color: white;
     list-style-type: none;
 }
-#footer_pages li{
-    padding: 2px 0px;   
+
+#footer_pages li {
+    padding: 2px 0px;
 }
 
-#regulamento{
+#regulamento {
     display: flex;
     justify-content: center;
     align-items: center;
 
     grid-column: 9 / 13;
 }
-#regulamento h3{
+
+#regulamento h3 {
     color: white;
 
     margin-bottom: 15px;
-    
+
     font-family: var(--secundary-font);
     font-weight: 400;
-    
+
     font-size: 20px;
 }
-#regulamento a{
+
+#regulamento a {
     text-decoration: none;
     color: white;
     list-style-type: none;
 }
-#regulamento li{
-    padding: 2px 0px;   
+
+#regulamento li {
+    padding: 2px 0px;
 }
 
 
-#footer_medias{
+#footer_medias {
     display: flex;
     justify-content: center;
     align-items: center;
 
     grid-column: 13 / 17;
 }
-#footer_medias a{
+
+#footer_medias a {
     text-decoration: none;
     color: white;
     list-style-type: none;
 }
-#footer_medias li{
-    padding: 2px 0px; 
-    font-size: 15px;  
+
+#footer_medias li {
+    padding: 2px 0px;
+    font-size: 15px;
 }
 
 
+/* Extra small devices (phones, 600px and down) */
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+
+/* Monitor grande */
+
+@media only screen and (max-width: 992px) {
+
+    header {
+        position: relative;
+    }
+
+    .empresas_card {
+        width: 350px;
+        height: 280px;
+
+        display: flex;
+        flex-direction: column;
+        border: 2px solid var(--marrom-claro);
+
+        border-radius: 10px;
+
+        overflow: hidden;
+
+        margin: 20px;
+    }
+
+    .empresas_card img {
+        width: 80px;
+        height: 80px;
+        margin: 10px;
+
+
+        border-radius: 20px;
+
+
+    }
+
+    #empresas {
+
+
+        margin: auto;
+        margin-top: 60px;
+    }
+
+    #empresas_card_espaco {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+
+        padding: 20px 0px;
+
+
+    }
+}
+
+@media only screen and (max-width: 820px){
+    .empresas_card {
+        width: 80%;
+        height: 350px;
+
+        display: flex;
+        flex-direction: column;
+        border: 2px solid var(--marrom-claro);
+
+        border-radius: 10px;
+
+        overflow: hidden;
+
+        margin: 20px;
+    }
+}
+
+/* Tablet */
+
+@media only screen and (max-width: 768px) {
+
+    .empresas_card {
+        width: 250px;
+        height: 350px;
+
+        display: flex;
+        flex-direction: column;
+        border: 2px solid var(--marrom-claro);
+
+        border-radius: 10px;
+
+        overflow: hidden;
+
+        margin: 20px;
+    }
+
+    .empresas_card img {
+        width: 80px;
+        height: 80px;
+        margin: 10px;
+
+
+        border-radius: 20px;
+
+
+    }
+
+    #empresas {
+
+
+        margin: auto;
+        margin-top: 60px;
+    }
+
+    #empresas_card_espaco {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+
+        padding: 20px 0px;
+
+
+    }
+
+    .empresas_card_tags {
+        display: flex;
+
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: start;
+
+        gap: 2px;
+
+        margin-top: 5px;
+    }
+}
+
+/* Celular */
+
+@media only screen and (max-width: 600px) {
+    .empresas_card {
+        width: 80%;
+        height: 180px;
+
+        display: flex;
+        flex-direction: row;
+        border: 2px solid var(--marrom-claro);
+
+        border-radius: 10px;
+
+        overflow: hidden;
+
+        margin: 20px;
+    }
+
+    .empresas_card img {
+
+        width: 80px;
+        height: 80px;
+        margin: 0px;
+
+
+        border-radius: 0px 0px 20px 0px;
+
+    }
+
+    #empresas {
+
+
+        margin: auto;
+        margin-top: 60px;
+    }
+
+    #empresas_card_espaco {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+
+        padding: 20px 0px;
+
+
+    }
+
+    .empresas_card_tags {
+        display: flex;
+
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: start;
+
+        gap: 2px;
+
+        margin-top: 5px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {}
