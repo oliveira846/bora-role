@@ -151,7 +151,11 @@ menu a:hover {
 }
 
 /* ------------------------------------- Main ------------------------------------- */
-
+hr{
+    border: none;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.144);
+}
 #busca {
 
     margin: auto;
