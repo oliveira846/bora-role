@@ -77,28 +77,28 @@
         </section>
         <section id="tags">
             <div class="linha">
-                <a href="#tags" onclick="organizarTags('baladas')">BALADAS</a>
-                <a href="#tags" onclick="organizarTags('bares')">BARES</a>
-                <a href="#tags" onclick="organizarTags('musicaaovivo')">MUSICA AO VIVO</a>
-                <a href="#tags" onclick="organizarTags('comidajaponesa')">COMIDA JAPONESA</a>
-                <a href="#tags" onclick="organizarTags('churrascaria')">CHURRASCARIA</a>
-                <a href="#tags" onclick="organizarTags('vegano')">VEGANO</a>
-                <a href="#tags" onclick="organizarTags('frutosdomar')">FRUTOS DO MAR</a>
-                <a href="#tags" onclick="organizarTags('lgbt+')">LGBT+</a>
-                <a href="#tags" onclick="organizarTags('flashback')">FLASH BACK</a>
-                <a href="#tags" onclick="organizarTags('culinariabahiana')">CULINARIA BAHIANA</a>
+                <a href="#tags" onclick="organizarTags('baladas', 'Baladas'); mensagemFiltrado('baladas')">BALADAS</a>
+                <a href="#tags" onclick="organizarTags('bares', 'Bares')">BARES</a>
+                <a href="#tags" onclick="organizarTags('musicaaovivo', 'Musica ao vivo')">MUSICA AO VIVO</a>
+                <a href="#tags" onclick="organizarTags('comidajaponesa', 'Comida Japonesa')">COMIDA JAPONESA</a>
+                <a href="#tags" onclick="organizarTags('churrascaria', 'Churrascaria')">CHURRASCARIA</a>
+                <a href="#tags" onclick="organizarTags('vegano', 'Vegano')">VEGANO</a>
+                <a href="#tags" onclick="organizarTags('frutosdomar', 'Frutos do Mar')">FRUTOS DO MAR</a>
+                <a href="#tags" onclick="organizarTags('lgbt+', 'LGBT+')">LGBT+</a>
+                <a href="#tags" onclick="organizarTags('flashback', 'Flashback')">FLASH BACK</a>
+                <a href="#tags" onclick="organizarTags('culinariabahiana', 'Culinaria Bahiana')">CULINARIA BAHIANA</a>
             </div>
             <div class="linha">
-                <a href="#tags" onclick="organizarTags('restaurante')">RESTAURANTE</a>
-                <a href="#tags" onclick="organizarTags('rock')">ROCK</a>
-                <a href="#tags" onclick="organizarTags('pagode')">PAGODE</a>
-                <a href="#tags" onclick="organizarTags('todasasidades')">TODAS AS IDADES</a>
-                <a href="#tags" onclick="organizarTags('sertanejo')">SERTANEJO</a>
-                <a href="#tags" onclick="organizarTags('geek')">GEEK</a>
-                <a href="#tags" onclick="organizarTags('rodizio')">RODIZIO</a>
-                <a href="#tags" onclick="organizarTags('karaoke')">KARAOKE</a>
-                <a href="#tags" onclick="organizarTags('openbar')">OPEN BAR</a>
-                <a href="#tags" onclick="organizarTags('culinariaitaliana')">CULINARIA ITALIANA</a>
+                <a href="#tags" onclick="organizarTags('restaurante', 'Restaurante')">RESTAURANTE</a>
+                <a href="#tags" onclick="organizarTags('rock', 'Rock')">ROCK</a>
+                <a href="#tags" onclick="organizarTags('pagode', 'Pagode')">PAGODE</a>
+                <a href="#tags" onclick="organizarTags('todasasidades', 'Todas as idades')">TODAS AS IDADES</a>
+                <a href="#tags" onclick="organizarTags('sertanejo', 'Sertanejo')">SERTANEJO</a>
+                <a href="#tags" onclick="organizarTags('geek', 'GEEK')">GEEK</a>
+                <a href="#tags" onclick="organizarTags('rodizio', 'Rodizio')">RODIZIO</a>
+                <a href="#tags" onclick="organizarTags('karaoke', 'Karaoke')">KARAOKE</a>
+                <a href="#tags" onclick="organizarTags('openbar', 'Openbar')">OPEN BAR</a>
+                <a href="#tags" onclick="organizarTags('culinariaitaliana', 'Culinaria Italiana')">CULINARIA ITALIANA</a>
             </div>
 
         </section>
@@ -108,7 +108,7 @@
 
         <section id="empresas">
             <h1>ROLES</h1>
-            <p id="filtrado">Filtrado por: </p>
+            <p id="filtrado">Filtrado por: <span id="filtrado_conteudo"></span></p>
             <div id="empresas_card_espaco">
                 <div class="empresas_card todasasidades frutosdomar musicaaovivo">
                     <img src="img/logo/sabordomar.png" alt="logo da empresa">

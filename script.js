@@ -1,7 +1,10 @@
 
-function organizarTags(a) {
+function organizarTags(a,b) {
     let todasCaixas = document.querySelectorAll('.empresas_card'); // pega todas
     
+    const text = document.querySelector('#filtrado_conteudo');
+    text.textContent = b
+
     todasCaixas.forEach(caixa => {
 
         
@@ -24,3 +27,5 @@ function resetar(){
         resetCaixas.style.order = '2';
     })
 }
+
+
