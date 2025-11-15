@@ -3,6 +3,7 @@ function organizarTags(a,b) {
     let todasCaixas = document.querySelectorAll('.empresas_card'); // pega todas
     
     const text = document.querySelector('#filtrado_conteudo');
+    text.style.display = 'inline-block'
     text.textContent = b
 
     todasCaixas.forEach(caixa => {

@@ -393,7 +393,18 @@ h2 {
 
     animation: movimentaTags 3s linear infinite alternate;
 }
+#filtrado_conteudo{
+    background-color: var(--verde-claro);
+    color: white;
+    display: none;
+    padding: 3px 10px;
+    
 
+    border-radius: 20px;
+}
+#filtrado{
+    margin-top: 20px;
+}
 @keyframes movimentaTags {
     50% {
         transform: translateX(-5px);
