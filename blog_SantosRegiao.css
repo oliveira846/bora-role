@@ -355,10 +355,17 @@ footer{
 
 .noticia1, .noticia2, .noticia3, .noticia4, .noticia5{
     display: flex;
+    
 }
 
 .noticia1{
     background-image: url(img/noticia1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+   
+
     padding: 50px;
     margin: 10px;
 
@@ -369,6 +376,8 @@ footer{
     justify-content: end;
 
     border-radius: 20px;
+
+    
 }
 
 .noticia1 h3{
@@ -380,6 +389,7 @@ footer{
 .noticia1 p{
     font-size: 15px;
     font-family: var(--secundary-font);
+    
 }
 
 .noticia2{
