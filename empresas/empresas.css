@@ -1,0 +1,152 @@
+:root {
+    /* Fonts */
+
+    --main-font: "Tuffy", sans-serif;
+    --secundary-font: "Inter", sans-serif;
+
+    /* Cores */
+
+    --roxo: #7756BF;
+    --roxo-escuro: #6b4cad;
+    --verde-claro: #04BF8A;
+    --verde-escuro: #02734A;
+    --marrom-claro: #D9A404;
+    --marrom-escuro: #D98E04;
+    --cinza: #D3D3D3;
+}
+body{
+    
+    
+}
+
+#empresa_conteudo{
+    max-width: 1200px;
+    margin: auto;
+    
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 5px;
+
+    background-color: rgb(236, 236, 236);
+}
+#empresa_local{
+    display: flex;
+    height: 100%;
+    align-items: start;
+}
+#empresa_local img{
+    border-radius: 50%;
+    margin-right: 30px;
+    
+    box-shadow: 0px 0px 10px black;
+}
+#empresa_column_position{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100%;
+}
+#empresa_nome{
+    display: flex;
+    
+    align-items: start;
+}
+#empresa_nome h2{
+    margin-right: 10px;
+}
+#empresa_descricao{
+    margin-top: 50px;
+}
+#empresa_descricao p{
+    font-size: 1.2rem;
+}
+
+/* proximos eventos */
+
+#proximos_eventos{
+    margin-top: 50px;
+}
+#empresa_calendario h3{
+    color: var(--roxo);
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 30px 0px;
+}
+#empresa_calendario_conteudo{
+    display: flex;
+    justify-content: space-around;
+}
+#empresa_calendario_numero{
+    width: 500px;
+    
+    display: flex;
+    
+    gap: 20px;
+    flex-wrap: wrap;
+
+    padding: 40px;
+}
+.calendario_numeros{
+    background-color: var(--roxo);
+    font-size: 1.6rem;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+
+    cursor: pointer;
+}
+.calendario_numeros_hover{
+    background-color: var(--verde-escuro);
+}
+#empresa_calendario_evento{
+    width: 500px;
+
+    display: flex;
+    flex-direction: column;
+}
+#empresa_notificacao{
+    display: none;
+
+    width: 250px;
+    text-align: center;
+
+    border-radius: 10px;
+
+    padding: 5px;
+    margin-top: 50px;
+
+    background-color: var(--verde-claro);
+    font-size: 1.3rem;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+#empresa_notificacao:hover{
+    background-color: var(--verde-escuro);
+    color: white;
+}
+#sim_evento{
+    color: var(--verde-escuro);
+}
+#nao_evento{
+    color: var(--roxo);
+}
+/* proximos eventos */
+
+#empresa_fotos{
+    margin-top: 50px;
+
+    display: flex;
+    gap: 50px;
+    overflow: auto;
+}
+#empresa_fotos img{
+    max-width: 800px;
+    min-width: 300px;
+
+    border-radius: 10px;
+}

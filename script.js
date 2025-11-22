@@ -29,4 +29,22 @@ function resetar(){
     })
 }
 
+function naoEvento(){
+    var paragrafoEvento = document.querySelector('#eventoP');
+    var tituloEvento = document.querySelector('#eventoH3');
+    var notification = document.querySelector('#empresa_notificacao');
 
+    paragrafoEvento.textContent = ''
+    tituloEvento.textContent = 'Não temos evento para hoje!'
+    notification.style.display = 'none'
+}
+function simEvento(){
+    var paragrafoEvento = document.querySelector('#eventoP');
+    var tituloEvento = document.querySelector('#eventoH3');
+    var notification = document.querySelector('#empresa_notificacao');
+
+    tituloEvento.textContent = 'Evento!'
+    paragrafoEvento.textContent = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores accusamus fugiat magni voluptas doloremque est perferendis veritatis nostrum fugit aliquam? Laborum quasi illo, quas dicta rem saepe neque quod similique!'
+    notification.style.display = 'block'
+
+}
