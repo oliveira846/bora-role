@@ -170,4 +170,14 @@ body{
         display: flex;
         flex-direction: column;
     }
+    #empresa_calendario_numero{
+        width: 100%;
+        
+        display: flex;
+        
+        gap: 20px;
+        flex-wrap: wrap;
+    
+        padding: 40px;
+    }
 }
