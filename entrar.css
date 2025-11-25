@@ -55,12 +55,6 @@ h2{
 }
 /* ------------------------------------- Header ------------------------------------- */
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-
-=======
-=======
->>>>>>> Stashed changes
 header{
     background-color: #D3D3D3;
 
@@ -244,10 +238,7 @@ footer{
     padding: 2px 0px; 
     font-size: 15px;  
 }
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+
 
 
 
@@ -256,32 +247,19 @@ footer{
 
 main{
     width: 100%;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-=======
-=======
->>>>>>> Stashed changes
     height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 
-    margin: 100px;
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+    
 }
 
 #titulo{
     font-family: var(--main-font);
     color: var(--roxo-escuro);
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
     margin: 5% 0% 0% 0%;
 }
 #titulo h3{
@@ -321,7 +299,7 @@ a{
 }
 
 #botao_acao_entrar{
-display: block;
+    display: block;
 
     align-self: center;
     margin-top: 15px;
@@ -341,9 +319,6 @@ display: block;
 
 #esqueceu_senha{
     align-self: end;
-=======
-=======
->>>>>>> Stashed changes
 }
 #titulo h3{
     margin: 10px 0px;
@@ -355,8 +330,4 @@ span{
 
 main form label{
     font-family: var(--main-font);
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 }
