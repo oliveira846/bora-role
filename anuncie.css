@@ -1,0 +1,168 @@
+/* =========================================
+   ESTILOS GERAIS DA PÁGINA ANUNCIE (anuncie.css)
+   ========================================= */
+
+/* Container para centralizar e limitar largura */
+.container-limitado {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* =========================================
+   SEÇÃO 1: HERO (Topo Branco)
+   ========================================= */
+#hero-anuncie {
+    background-color: white;
+    padding: 80px 20px;
+    text-align: center;
+    font-family: var(--secundary-font);
+}
+
+#hero-anuncie h1 {
+    font-size: 3em;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: var(--secundary-font);
+}
+
+/* Cores do título */
+.texto-verde { color: var(--verde-claro); }
+.texto-roxo { color: var(--roxo); }
+
+.hero-descricao {
+    font-family: var(--secundary-font);
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    text-align: justify; /* Texto justificado no Desktop */
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Botão Transparente */
+.btn-hero-outline {
+    display: inline-block;
+    padding: 12px 35px;
+    border: 2px solid var(--roxo);
+    border-radius: 50px;
+    color: var(--roxo);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+    font-family: var(--main-font);
+}
+
+.btn-hero-outline:hover {
+    background-color: var(--roxo);
+    color: white;
+}
+
+/* =========================================
+   SEÇÃO 2: MOTIVOS (Fundo Roxo)
+   ========================================= */
+#motivos-anunciar {
+    background-color: var(--roxo);
+    color: white;
+    padding: 60px 20px;
+    font-family: var(--secundary-font);
+}
+
+#motivos-anunciar h2 {
+    color: white;
+    text-align: left;
+    font-size: 2.2em;
+    font-weight: 300;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.grid-motivos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.motivo-item h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.motivo-item p {
+    font-size: 0.95em;
+    line-height: 1.5;
+    color: #EEE;
+    text-align: justify;
+}
+
+/* =========================================
+   SEÇÃO 3: FAQ (Perguntas Frequentes)
+   ========================================= */
+#faq-section {
+    background-color: white;
+    padding: 60px 20px;
+    font-family: var(--secundary-font);
+}
+
+#faq-section h2 {
+    color: var(--roxo);
+    text-align: left;
+    font-size: 2.2em;
+    font-weight: 300;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.faq-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.faq-item {
+    background-color: var(--roxo);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: 300;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.faq-item:hover {
+    background-color: var(--roxo-escuro);
+    transform: translateX(5px);
+}
+
+/* =========================================
+   RESPONSIVIDADE (Celulares e Tablets)
+   ========================================= */
+@media (max-width: 768px) {
+    #hero-anuncie h1 {
+        font-size: 2em;
+    }
+    
+    .hero-descricao {
+        text-align: center; /* Centraliza texto no mobile */
+    }
+
+    .grid-motivos {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    #motivos-anunciar h2, 
+    #faq-section h2 {
+        font-size: 1.8em;
+        text-align: center;
+    }
+}
+
