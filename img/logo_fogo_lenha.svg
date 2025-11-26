@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="200" viewBox="0 0 600 200">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0%" stop-color="#ff8a00"/>
+      <stop offset="100%" stop-color="#ff1e56"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#fff"/>
+  <g transform="translate(30,20)">
+    <path d="M80 10 C60 40 60 80 80 110 C100 140 140 150 160 120 C180 90 160 60 150 40 C140 20 120 5 100 10 C90 12 85 8 80 10 Z" fill="url(#g1)" />
+    <path d="M120 30 C110 50 110 70 120 90 C130 110 150 120 160 100 C170 80 160 60 155 48 C150 36 140 28 130 30 Z" fill="#ffcc00" opacity="0.85"/>
+  </g>
+  <text x="220" y="120" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#333">Fogo &amp; Lenha</text>
+  <text x="220" y="150" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#666">Churrascaria • Comida rústica</text>
+</svg>

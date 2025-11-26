@@ -213,13 +213,26 @@ h2 {
 
     margin: auto;
 
-    border: 3px solid var(--marrom-claro);
+    border: 1px solid var(--marrom-claro);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.527);
 
+    
     position: relative;
 
     border-radius: 10px;
+    background-color: black;
+    
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-
+#principal_role_view h2{
+    color: var(--marrom-claro);
+    background-color: rgba(0, 0, 0, 0.781);
+    border-radius: 10px;
+    padding: 10px 30px;
+}
 #principal_role_position {
     display: flex;
     width: 100%;
@@ -236,11 +249,17 @@ h2 {
     width: 160px;
     height: 160px;
 
-    border: 2px solid var(--roxo-escuro);
+    cursor: pointer;
 
     border-radius: 20px;
 
     transition: 1s;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .principal_role_box:hover {
@@ -648,6 +667,32 @@ footer {
         text-decoration: none;
         color: var(--roxo);
     }
+
+    #principal_role_view {
+    width: 100%;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+
+    border: 0px solid var(--marrom-claro);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.527);
+
+    
+    position: relative;
+
+    border-radius: 0px;
+    background-color: black;
+    
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
     /* Cards das empresas */
 
