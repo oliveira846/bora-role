@@ -228,7 +228,7 @@ h2 {
     background-repeat: no-repeat;
 }
 #principal_role_view h2{
-    color: var(--marrom-claro);
+    color: white;
     background-color: rgba(0, 0, 0, 0.781);
     border-radius: 10px;
     padding: 10px 30px;
