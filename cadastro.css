@@ -152,7 +152,47 @@
 }
 
 /* Responsividade */
+@media only screen and (max-width: 992px) {
+
+    /* header */
+
+
+
+    header {
+        background-color: var(--cinza);
+
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        height: fit-content;
+
+        justify-content: space-between;
+
+
+        position: relative;
+        top: 0;
+
+        z-index: 2;
+
+        overflow: hidden;
+    }
+
+    #logo img {
+        width: 100px;
+        position: absolute;
+
+        left: 10px;
+        top: 10px;
+    }}
 @media (max-width: 768px) {
+    #logo img {
+        width: 100px;
+        position: absolute;
+
+        left: 10px;
+        top: 10px;
+    }
     .form-grid {
         grid-template-columns: 1fr;
     }

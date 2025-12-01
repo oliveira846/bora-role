@@ -69,9 +69,7 @@ header{
 
     z-index: 2;
 }
-#logo img{
-    width: 180px;
-}
+
 nav{
     display: flex;
     justify-content: space-between;
