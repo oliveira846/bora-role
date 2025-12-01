@@ -52,18 +52,23 @@ function simEvento(){
 function principalRole(a){
     var banner = document.querySelector('#principal_role_view');
     var textBanner = document.querySelector('#bannerText');
+    var linkBanner = document.querySelector('#linkBanner');
 
     if(a === 'jardimsushi'){
         banner.style.backgroundImage = "url('img/jardimsushi (2).jpg')"
         textBanner.textContent = 'Jardim Sushi'
+        linkBanner.href = '/empresas/jardim-sushi.html'
     } else if(a === 'cervejacais'){
         banner.style.backgroundImage = "url('img/ba.jpg')"
         textBanner.textContent = 'Cervejaria Cais'
+        linkBanner.href = '/empresas/cervejaria-artesanal-cais.html'
     } else if(a === 'dockside'){
         banner.style.backgroundImage = "url('img/dockside.jpg')"
         textBanner.textContent = 'Dockside'
+        linkBanner.href = '/empresas/dockside.html'
     }else if(a === 'tocodosamba'){
         banner.style.backgroundImage = "url('img/toco.jpg')"
         textBanner.textContent = 'Toco do Samba'
+        linkBanner.href = '/empresas/toco-do-samba.html'
     }
 }
