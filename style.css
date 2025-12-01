@@ -429,11 +429,11 @@ h2 {
 }
 @keyframes movimentaTags {
     50% {
-        transform: translateX(-5px);
+        transform: translateX(-8px);
     }
 
     100% {
-        taransform: translateX(5px);
+        taransform: translateX(8px);
     }
 }
 
