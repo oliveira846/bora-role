@@ -26,11 +26,6 @@ body{
     
 }
 
-
-
-body{
-   
-}
 main{
     margin-top: 50px;
 }
@@ -69,16 +64,15 @@ main{
 /* Membros e apoiadores */
 
 #membros_apoiadores{
-    width: 80%;
+    width: 100%;
     
     margin: auto;
     padding: 50px;
 }
-#membros{
-    
-}
+
 .cards_position{
     display: flex;
+    flex-wrap: wrap;
     gap: 50px;
     justify-content: center;
     margin: 50px 0px
@@ -112,12 +106,12 @@ main{
 
 #patrocinadores_content{
     display: flex;
-
+    flex-wrap: wrap;
     padding: 50px;
 
     justify-content: space-around;
 
-    height: 200px;
+    
 }
 
 .patrocinadores_cards img{
@@ -125,4 +119,64 @@ main{
     width: 80px;
     border-radius: 50%;
     
+}
+
+@media only screen and (max-width: 992px) {
+    #about_section{
+        display: flex;
+    
+        height: fit-content;
+        width: 100%;
+        
+        margin: auto;
+    }
+    #about_image, #about_text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #about_image img{
+        width: 350px;
+        display: none;
+    }
+    #about_image{
+        display: none;
+    }
+   
+    #about_text_content{
+        
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        text-align: start;
+    }
+    #about_text_content h1{
+        margin-bottom: 20px;
+        text-align: start;
+    }
+    #about_image, #about_text{
+        width: 100%;
+        margin: 10px;
+    }
+    .patrocinadores_cards img{
+        text-align: center;
+        width: 40px;
+        border-radius: 50%;
+        
+    }
+    #patrocinadores_content{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        margin-top: 20px;
+        justify-content: space-between;
+        text-align: center;
+        
+    }
+    #patrocinadores h2{
+        font-size: 2rem;
+    }
+    #apoiadores h2{
+        font-size: 2rem;
+    }
 }
