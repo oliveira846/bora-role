@@ -81,3 +81,6 @@ function nightMode() {
     faq.classList.toggle("dark-mode");
     hero.classList.toggle("dark-mode");
     }
+
+
+    // hfjdf
