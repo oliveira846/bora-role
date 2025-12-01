@@ -29,19 +29,33 @@ body {
     font-family: var(--main-font);
 
 }
+body.dark-mode {
+    background-color: black;
+    
+    }
+body.dark-mode p{
+    color: white;
+}
+body.dark-mode h3{
+    color: white;
+}
+
 
 /* ------------------------------------- Medias ------------------------------------- */
 
 #medias {
     position: fixed;
-    top: 20%;
-    left: 96%;
+    top: 22%;
+    left: calc(98% - 50px);
 
-    padding: 10px;
+    height: 50px;
+    width: 50px;
+
+    
 
     background-color: var(--roxo);
 
-    border-radius: 6px 0px 0px 6px;
+    border-radius: 50%;
 
     display: flex;
     flex-direction: column;

@@ -17,6 +17,8 @@
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     font-family: var(--secundary-font); /* Puxa do style.css */
+    margin: auto;
+    margin-top: 50px;
 }
 
 /* Cabeçalho do Formulário */

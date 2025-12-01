@@ -72,3 +72,12 @@ function principalRole(a){
         linkBanner.href = '/empresas/toco-do-samba.html'
     }
 }
+
+function nightMode() {
+    var element = document.body;
+    var hero = document.querySelector('#hero-anuncie')
+    var faq = document.querySelector('#faq-section')
+    element.classList.toggle("dark-mode");
+    faq.classList.toggle("dark-mode");
+    hero.classList.toggle("dark-mode");
+    }
