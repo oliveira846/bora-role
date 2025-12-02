@@ -45,13 +45,13 @@ body.dark-mode h3{
 
 #medias {
     position: fixed;
-    top: 22%;
+    top: 18%;
     left: calc(98% - 50px);
 
     height: 50px;
     width: 50px;
 
-    
+    z-index: 3;
 
     background-color: var(--roxo);
 
@@ -993,7 +993,7 @@ footer {
         }
     }
 
-    /* Cards das empresasdfdfd */
+    /* Cards das empresas */
 
     .empresas_card {
         width: 90%;
