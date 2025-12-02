@@ -1,6 +1,4 @@
-/* =========================================
-   ESTILOS GERAIS DA PÁGINA ANUNCIE (anuncie.css)
-   ========================================= */
+/* ESTILOS GERAIS DA PÁGINA ANUNCIE (anuncie.css) */
 
 /* Container para centralizar e limitar largura */
 .container-limitado {
@@ -9,9 +7,7 @@
     margin: 0 auto;
 }
 
-/* =========================================
-   SEÇÃO 1: HERO (Topo Branco)
-   ========================================= */
+/* SEÇÃO 1: HERO (Topo Branco) */
 #hero-anuncie {
     background-color: white;
     padding: 80px 20px;
@@ -70,9 +66,7 @@
     color: white;
 }
 
-/* =========================================
-   SEÇÃO 2: MOTIVOS (Fundo Roxo)
-   ========================================= */
+/* SEÇÃO 2: MOTIVOS (Fundo Roxo) */
 #motivos-anunciar {
     background-color: var(--roxo);
     color: white;
@@ -109,9 +103,7 @@
     text-align: justify;
 }
 
-/* =========================================
-   SEÇÃO 3: FAQ (Perguntas Frequentes)
-   ========================================= */
+/* SEÇÃO 3: FAQ (Perguntas Frequentes) */
 #faq-section {
     background-color: white;
     padding: 60px 20px;
@@ -149,9 +141,7 @@
     transform: translateX(5px);
 }
 
-/* =========================================
-   RESPONSIVIDADE (Celulares e Tablets)
-   ========================================= */
+/* RESPONSIVIDADE (Celulares e Tablets) */
 @media (max-width: 768px) {
     #hero-anuncie h1 {
         font-size: 2em;
@@ -173,3 +163,46 @@
     }
 }
 
+/* ATUALIZAÇÃO FAQ COM HOVER (INTERATIVO) */
+
+.faq-item {
+    background-color: var(--roxo);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Suaviza a cor de fundo */
+    overflow: hidden; /* Importante para a animação funcionar */
+}
+
+/* Estilo do texto da Pergunta */
+.faq-pergunta {
+    font-size: 1.1em;
+    font-weight: 300;
+    text-transform: uppercase; /* Mantém o estilo original */
+}
+
+/* Estilo da Resposta (Inicialmente oculta) */
+.faq-resposta {
+    max-height: 0; /* Começa com altura zero */
+    opacity: 0;    /* Começa invisível */
+    margin-top: 0;
+    font-size: 0.95em;
+    color: #e0e0e0; /* Um branco levemente cinza para diferenciar */
+    line-height: 1.5;
+    font-weight: 400;
+    transition: all 0.5s ease; /* Animação suave de 0.5 segundos */
+}
+
+/* O MÁGICO ACONTECE AQUI: Quando passar o mouse no .faq-item */
+.faq-item:hover {
+    background-color: var(--roxo-escuro); /* Muda a cor do fundo */
+    transform: translateX(5px); /* Move levemente para a direita */
+    padding-bottom: 25px; /* Dá um respiro extra em baixo */
+}
+
+.faq-item:hover .faq-resposta {
+    max-height: 200px; /* Define um limite máximo para o texto abrir */
+    opacity: 1;        /* Torna visível */
+    margin-top: 15px;  /* Separa da pergunta */
+}
