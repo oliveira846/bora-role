@@ -1,223 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
-:root{
-    /* Fonts */
-
-    --main-font: "Tuffy", sans-serif;
-    --secundary-font: "Inter", sans-serif;
-
-    /* Cores */
-
-    --roxo: #7756BF;
-    --roxo-escuro: #6b4cad;
-    --verde-claro: #04BF8A;
-    --verde-escuro: #02734A;
-    --marrom-claro: #D9A404;
-    --marrom-escuro: #D98E04;
-    --cinza: #D3D3D3;
-}
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-body{
-    font-family: var(--main-font);
-    
-}
-
-/* ------------------------------------- Texto ------------------------------------- */
-
-h1{
-    font-family: var(--secundary-font);
-    font-weight: 300;
-    text-align: center;
-
-    color: var(--roxo);
-
-    font-size: 4em;
-}
-h2{
-    font-family: var(--secundary-font);
-    font-weight: 300;
-    text-align: center;
-
-    color: var(--roxo);
-
-    font-size: 3em;
-}
-
-.verde{
-    color: var(--verde-claro);
-}
-/* ------------------------------------- Header ------------------------------------- */
-
-header{
-    background-color: #D3D3D3;
-
-    /* Display */
-
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 50px 10px 50px;  
-
-    position: sticky;
-    top: 0;
-
-    z-index: 2;
-}
-#logo img{
-    width: 180px;
-}
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-nav menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style-type: none;
-
-    text-decoration: none;
-
-}
-menu a{
-    text-decoration: none;
-    color: var(--roxo);
-    margin: 0px 20px;
-    
-    font-size: 1.3em; 
-    
-    
-}
-menu a:hover{
-    border-bottom: 2px solid var(--roxo-escuro);
-    
-}
-#log{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-    padding-top: 40PX;
-}
-#log a{
-    text-decoration: none;
-    
-}
-#botao_login{
-    background-color: var(--verde-claro);
-    padding: 5px 25px;
-    border-radius: 20px;
-    text-align: center;
-    color: white; 
-    font-size: 1.2em;
-
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.623);
-
-    transition: 0.3s;
-}
-#botao_login:hover{
-    background-color: var(--verde-escuro);
-    
-}
-#cadastre_se{
-    text-align: center;
-    margin-top: 5px;
-    text-decoration: none;
-    color: var(--roxo);
-}
-
-/* ------------------------------------- Footer ------------------------------------- */
-
-footer{
-    background-color: var(--roxo);
-
-    margin-top: 50px;
-
-    height: 300px;
-    
-    display: grid;
-
-    grid-template-columns: repeat(16, 1fr);
-
-    font-family: var(--secundary-font);
-    font-weight: 200;
-}
-#footer_logo{
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
-
-    grid-column: 1 / 5;
-    
-    margin-bottom: 30px;
-}
-#footer_logo img{
-    width: 250px;  
-}
-
-
-
-
-#footer_pages{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    grid-column: 5 / 9;
-}
-#footer_pages h3{
-    color: white;
-
-    margin-bottom: 15px;
-    
-    font-family: var(--secundary-font);
-    font-weight: 400;
-    
-    font-size: 20px;
-}
-#footer_pages a{
-    text-decoration: none;
-    color: white;
-    list-style-type: none;
-}
-#footer_pages li{
-    padding: 2px 0px;   
-}
-
-#regulamento{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    grid-column: 9 / 13;
-}
-#regulamento h3{
-    color: white;
-
-    margin-bottom: 15px;
-    
-    font-family: var(--secundary-font);
-    font-weight: 400;
-    
-    font-size: 20px;
-}
-#regulamento a{
-    text-decoration: none;
-    color: white;
-    list-style-type: none;
-}
-#regulamento li{
-    padding: 2px 0px;   
-}
 
 
 
@@ -226,7 +6,6 @@ footer{
 /* ------------------------------------- Carrossel ------------------------------------- */
 
 #principal_role_carossel{
-    height: 500px;
     background-color: var(--roxo);
 }
 /* ------------------------------------- Carrossel ------------------------------------- */
@@ -245,6 +24,10 @@ footer{
     flex-wrap: nowrap;
 }
 
+body{
+    min-width: 800px;
+}
+
 .foraDoCard{
     justify-self: center;
     align-self: center;
@@ -252,31 +35,28 @@ footer{
 
 #card_proximoRole{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-self: center;
-
-    
     padding: 20px;
 }
 
 .role_card{
-    width: 900px;
+    width: 90%;
     height: 200px;
-    
     display: flex;
-
     border: 2px solid var(--marrom-claro);
-
     border-radius: 10px;
-
     overflow: hidden;
-
     margin: 20px;
 }
+
+.role_card img{
+    width: 295px;
+}
+
 .empresas_card img{
-    width: 200px;
+    width: 150px;
     height: 100%;
 
     
@@ -284,9 +64,7 @@ footer{
 .proximoRole_card_conteudo{
     width: 100%;
     height: 100%;
-
     padding: 5px 5px 5px 20px;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -341,15 +119,17 @@ footer{
 
 #noticias{
     
+    display: flex;
+    flex-direction: column;
     width: 80%;
+    width: 70%;
     height: 900px;
-
     margin: auto;
     margin-top: 20px;
 
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 30fr 30fr 30fr 30fr 30fr 30fr;
+    grid-template-rows: 30fr 30fr 30fr 30fr 30fr 30fr; */
 
 }
 
@@ -363,19 +143,14 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
-   
-
     padding: 50px;
     margin: 10px;
-
-    grid-row: 1/5;
-    grid-column: 1/6;
-
+    grid-row: 1 / 5;
+    grid-column: 1 / 6;
     flex-direction: column;
     justify-content: end;
-
     border-radius: 20px;
+    width: 100%;
 
     
 }
@@ -407,7 +182,7 @@ footer{
 }
 
 .imagem_noticias{
-    height: 300px;
+    height: 80%;
     justify-self: start;
     align-items: start;
 
@@ -482,21 +257,20 @@ footer{
 
 /* ------------------------------------- Footer ------------------------------------- */
 
-#footer_medias{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    grid-column: 13 / 17;
-}
-#footer_medias a{
-    text-decoration: none;
-    color: white;
-    list-style-type: none;
-}
-#footer_medias li{
-    padding: 2px 0px; 
-    font-size: 15px;  
-}
 
 
+/* @media (max-width: 500px) {
+
+    #noticias{
+    
+        width: 80%;
+        height: 900px;
+    
+        margin: auto;
+        margin-top: 20px;
+    
+        display: flex;
+        flex-direction: column;
+    
+    }
+} */

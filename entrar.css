@@ -137,7 +137,9 @@ menu a:hover{
 /* ----Footer---- */
 
 
-
+body{
+    min-width: 500px;
+}
 
 
 
@@ -162,6 +164,7 @@ main{
 }
 #titulo h3{
     margin: 2% 0%;
+    justify-self: center;
 }
 
 a{
