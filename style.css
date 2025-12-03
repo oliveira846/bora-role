@@ -244,7 +244,16 @@ h2 {
 #principal_role_view h2{
     color: white;
     background-color: rgba(0, 0, 0, 0.781);
-    border-radius: 10px;
+    
+    padding: 10px 30px;
+}
+#linkBanner{
+    width: 70%;
+}
+#principal_role_view p{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.781);
+    text-align: center;
     padding: 10px 30px;
 }
 #principal_role_position {
@@ -255,10 +264,10 @@ h2 {
     position: absolute;
 
     top: 420px;
-
-
 }
-
+#bannerText p{
+    font-size: 1em; 
+}
 .principal_role_box {
     width: 160px;
     height: 160px;
@@ -717,6 +726,10 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
 }
+.principal_role_box:hover {
+    transform: scale(1);
+}
+
 
     /* Cards das empresas */
 
