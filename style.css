@@ -244,7 +244,16 @@ h2 {
 #principal_role_view h2{
     color: white;
     background-color: rgba(0, 0, 0, 0.781);
-    border-radius: 10px;
+    
+    padding: 10px 30px;
+}
+#linkBanner{
+    width: 70%;
+}
+#principal_role_view p{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.781);
+    text-align: center;
     padding: 10px 30px;
 }
 #principal_role_position {
@@ -255,10 +264,10 @@ h2 {
     position: absolute;
 
     top: 420px;
-
-
 }
-
+#bannerText p{
+    font-size: 1em; 
+}
 .principal_role_box {
     width: 160px;
     height: 160px;
@@ -400,7 +409,7 @@ h2 {
 
 #tags {
     margin-top: 50px;
-
+    font-size: 1.4rem;
     display: flex;
     flex-direction: column;
 
@@ -412,11 +421,12 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    
 }
 
 #tags a {
     text-decoration: none;
-    background-color: var(--verde-claro);
+    background-color: var(--roxo-escuro);
     color: white;
 
 
@@ -460,7 +470,7 @@ footer {
 
     padding: 15px;
 
-    height: 300px;
+    height: fit-content;
 
     display: grid;
 
@@ -625,6 +635,15 @@ footer {
         text-decoration: none;
 
     }
+    #tags {
+        margin-top: 50px;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+    
+        justify-content: space-around;
+    
+    }
 
     menu a {
         text-decoration: none;
@@ -707,6 +726,10 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
 }
+.principal_role_box:hover {
+    transform: scale(1);
+}
+
 
     /* Cards das empresas */
 

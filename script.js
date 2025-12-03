@@ -1,4 +1,3 @@
-
 function organizarTags(a,b) {
     let todasCaixas = document.querySelectorAll('.empresas_card'); // pega todas
     
@@ -53,34 +52,49 @@ function principalRole(a){
     var banner = document.querySelector('#principal_role_view');
     var textBanner = document.querySelector('#bannerText');
     var linkBanner = document.querySelector('#linkBanner');
+    var textBannerp = document.querySelector('#bannerTextop');
 
     if(a === 'jardimsushi'){
         banner.style.backgroundImage = "url('img/jardimsushi (2).jpg')"
         textBanner.textContent = 'Jardim Sushi'
+        textBannerp.textContent = 'Venha experimentar o melhor sushi da cidade, com ingredientes frescos e um ambiente acolhedor que vai te conquistar.'
         linkBanner.href = '/empresas/jardim-sushi.html'
     } else if(a === 'cervejacais'){
         banner.style.backgroundImage = "url('img/ba.jpg')"
         textBanner.textContent = 'Cervejaria Cais'
+        textBannerp.textContent = 'Venha experimentar a melhor cerveja da cidade, com ingredientes frescos e um ambiente acolhedor que vai te conquistar.' 
         linkBanner.href = '/empresas/cervejaria-artesanal-cais.html'
     } else if(a === 'dockside'){
         banner.style.backgroundImage = "url('img/dockside.jpg')"
         textBanner.textContent = 'Dockside'
+        textBannerp.textContent = 'Melhor restaurante da região com pratos deliciosos e um ambiente incrível para você aproveitar.'
         linkBanner.href = '/empresas/dockside.html'
     }else if(a === 'tocodosamba'){
         banner.style.backgroundImage = "url('img/toco.jpg')"
         textBanner.textContent = 'Toco do Samba'
+        textBannerp.textContent = 'O melhor do samba ao vivo todas as noites, com uma atmosfera vibrante e acolhedora para você curtir com os amigos.'
         linkBanner.href = '/empresas/toco-do-samba.html'
     }
 }
 
 function nightMode() {
     var element = document.body;
-    var hero = document.querySelector('#hero-anuncie')
-    var faq = document.querySelector('#faq-section')
+    var hero = document.querySelector('#hero-anuncie');
+    var faq = document.querySelector('#faq-section');
+    var empresaConteudo = document.querySelector('#empresa_conteudo');
+    var mediaIcon = document.querySelector('#medias i');
+
     element.classList.toggle("dark-mode");
-    faq.classList.toggle("dark-mode");
-    hero.classList.toggle("dark-mode");
+    if (faq) faq.classList.toggle("dark-mode");
+    if (hero) hero.classList.toggle("dark-mode");
+    if (empresaConteudo) empresaConteudo.classList.toggle("dark-mode");
+
+   
+    if (element.classList.contains("dark-mode")) {
+        mediaIcon.className = "bi bi-brightness-high-fill";
+    } else {
+        mediaIcon.className = "bi bi-moon-fill";
     }
+}
 
 
-    // hfjdf
