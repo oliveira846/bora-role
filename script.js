@@ -1,4 +1,3 @@
-
 function organizarTags(a,b) {
     let todasCaixas = document.querySelectorAll('.empresas_card'); // pega todas
     
@@ -75,12 +74,14 @@ function principalRole(a){
 
 function nightMode() {
     var element = document.body;
-    var hero = document.querySelector('#hero-anuncie')
-    var faq = document.querySelector('#faq-section')
+    var hero = document.querySelector('#hero-anuncie');
+    var faq = document.querySelector('#faq-section');
+    var empresaConteudo = document.querySelector('#empresa_conteudo');
+
     element.classList.toggle("dark-mode");
-    faq.classList.toggle("dark-mode");
-    hero.classList.toggle("dark-mode");
-    }
+    if (faq) faq.classList.toggle("dark-mode");
+    if (hero) hero.classList.toggle("dark-mode");
+    if (empresaConteudo) empresaConteudo.classList.toggle("dark-mode");
+}
 
 
-    // hfjdf
