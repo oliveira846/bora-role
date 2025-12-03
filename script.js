@@ -82,11 +82,19 @@ function nightMode() {
     var hero = document.querySelector('#hero-anuncie');
     var faq = document.querySelector('#faq-section');
     var empresaConteudo = document.querySelector('#empresa_conteudo');
+    var mediaIcon = document.querySelector('#medias i');
 
     element.classList.toggle("dark-mode");
     if (faq) faq.classList.toggle("dark-mode");
     if (hero) hero.classList.toggle("dark-mode");
     if (empresaConteudo) empresaConteudo.classList.toggle("dark-mode");
+
+   
+    if (element.classList.contains("dark-mode")) {
+        mediaIcon.className = "bi bi-brightness-high-fill";
+    } else {
+        mediaIcon.className = "bi bi-moon-fill";
+    }
 }
 
 
