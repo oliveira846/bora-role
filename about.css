@@ -113,7 +113,11 @@ main{
 
     
 }
+.patrocinadores_cards{
 
+    text-align: center;
+    
+}
 .patrocinadores_cards img{
 
     width: 80px;
