@@ -83,11 +83,13 @@ function nightMode() {
     var faq = document.querySelector('#faq-section');
     var empresaConteudo = document.querySelector('#empresa_conteudo');
     var mediaIcon = document.querySelector('#medias i');
+    var nightProximoRole = document.querySelector('.role_card')
 
     element.classList.toggle("dark-mode");
     if (faq) faq.classList.toggle("dark-mode");
     if (hero) hero.classList.toggle("dark-mode");
     if (empresaConteudo) empresaConteudo.classList.toggle("dark-mode");
+    if (nightProximoRole) nightProximoRole.classList.toggle("dark-mode");
 
    
     if (element.classList.contains("dark-mode")) {

@@ -68,10 +68,17 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    color: white;
+    background-color: black;
+}
+#cortitulo{
+   color: white;
 }
 .proximoRole_card_conteudo_flex{
     display: flex;
     justify-content: space-between;
+
+    
 }
 #card_coluna{
     flex-direction: column;
