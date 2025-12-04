@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bora Role</title>
+    <title>Bora Role - Proteção de Dados</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="entrar.css">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="politicas.css"> <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <script src="script.js"></script>
 </head>
@@ -14,53 +13,48 @@
     <div id="medias" onclick="nightMode()">
         <i class="bi bi-moon-fill"></i>
     </div> 
-
+    
     <header>
         <div id="logo">
-            <a href="index.html"><img src="img/logo_nome todo_roxo.png" alt="Logo do site bora role"></a>
+            <a href="index.html"><img src="img/logo_nome todo_roxo.png" alt="Logo do site bora de role"></a>
         </div>
         <nav>
             <menu>
-
-                <a href="about.html">
-                    <li>SOBRE NÓS</li>
-                </a>
-                <a href="blog_SantosRegiao.html">
-                    <li>SANTOS E REGIÃO</li>
-                </a>
-                <a href="anuncie.html">
-                    <li>ANUNCIE CONOSCO</li>
-                </a>
+                <a href="about.html"><li class="list_reset">SOBRE NÓS</li></a>
+                <a href="blog_SantosRegiao.html"><li class="list_reset">SANTOS E REGIÃO</li></a>
+                <a href="anuncie.html"><li class="list_reset">ANUNCIE CONOSCO</li></a>
             </menu>
         </nav>
         <div id="log">
             <a href="entrar.html" id="botao_login">ENTRAR</a>
-            <a href="cadastro.html" id="cadastre_se">Cadastre-se</a>
+            <a href="cadastro.html" id="cadastre_se" style="font-weight: bold;">Cadastre-se</a>
         </div>
     </header>
 
-    <!-- Main -->
-    <main>
-        <div id="titulo">
-            <h1>FIQUE POR DENTRO DO SEU ROLE</h1>
-            <h3>Não tem uma conta ainda? <a href="cadastro.html">Criar</a></h3>
-        </div>
-        
-        <div id="formulario">
-        <form>
-            <label class="conteudo_form"> E-mail:</label>
-            <input class="conteudo_form" type="text" placeholder="Digite seu e-mail">
-            <label class="conteudo_form">Senha:</label>
-            <input class="conteudo_form" type="password" placeholder="Digite sua senha">
-        </form>
-        <a id="esqueceu_senha" href="#" style="font-size: 16px;">Esqueceu a senha?</a>
-        <button id="botao_acao_entrar">ENTRAR</button>
-        </div>
-        
+    <main class="main-policy">
+        <section class="policy-box">
+    <div class="policy-header">
+        <h2>Políticas da Empresa</h2>
+        <span class="subtitle">Nossa Missão, Visão e Valores</span>
+    </div>
 
+    <div class="policy-content">
+        <p>O <strong>Bora Role</strong> é mais do que um site de eventos; somos uma comunidade dedicada a conectar pessoas a experiências inesquecíveis.</p>
+
+        <h3>1. Nossa Missão</h3>
+        <p>Facilitar a descoberta de lazer e cultura em Santos e Região, promovendo encontros reais em um mundo cada vez mais digital.</p>
+
+        <h3>2. Código de Conduta</h3>
+        <p>Prezamos pelo respeito mútuo. Não toleramos assédio, racismo, homofobia ou qualquer forma de preconceito, seja na plataforma online ou nos eventos que levam nossa marca.</p>
+
+        <h3>3. Transparência</h3>
+        <p>Comprometemo-nos a ser transparentes sobre como operamos, como monetizamos e como tratamos os dados dos nossos usuários. A confiança da comunidade é nosso maior ativo.</p>
+
+        <h3>4. Sustentabilidade</h3>
+        <p>Incentivamos e damos destaque a eventos que adotam práticas sustentáveis, como redução de plástico e gestão correta de resíduos.</p>
+    </div>
+</section>
     </main>
-    
-    <!-- Footer -->
 
     <footer>
         <aside id="footer_logo">

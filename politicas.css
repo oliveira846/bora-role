@@ -1,0 +1,218 @@
+/* politicas.css */
+
+@import url('style.css'); /* Garante as variáveis e fontes */
+
+/* Fundo da página (igual ao cadastro) */
+.main-policy {
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinhado ao topo para textos longos */
+    padding: 120px 20px 60px 20px; /* Mais espaço no topo por causa do header fixo */
+}
+
+/* O Box Branco de Conteúdo */
+.policy-box {
+    background-color: #FAFAFA;
+    width: 800px;
+    max-width: 100%;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    font-family: var(--secundary-font);
+    margin: auto;
+}
+
+/* Cabeçalho do Conteúdo */
+.policy-header {
+    border-bottom: 2px solid #DDD;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.policy-header h2 {
+    color: var(--roxo);
+    font-family: var(--main-font);
+    font-size: 2.5em;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.policy-header .subtitle {
+    color: #666;
+    font-size: 1em;
+}
+
+/* Formatação do Texto do Corpo */
+.policy-content {
+    color: #333;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.policy-content h3 {
+    color: var(--verde-escuro);
+    font-family: var(--secundary-font);
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.policy-content p {
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+
+.policy-content ul {
+    list-style-position: inside;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.policy-content li {
+    margin-bottom: 8px;
+}
+
+.policy-content strong {
+    color: var(--roxo);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .policy-box {
+        padding: 30px;
+    }
+    .policy-header h2 {
+        font-size: 1.8em;
+    }
+}
+/* ---------------------------------------------------------------- */
+/* CONFIGURAÇÃO DO DARK MODE PARA AS PÁGINAS DE POLÍTICAS */
+/* Adicione isso ao final do arquivo politicas.css */
+/* ---------------------------------------------------------------- */
+
+/* 1. Muda a cor de fundo da área principal (que estava cinza claro) */
+body.dark-mode .main-policy {
+    background-color: #121212; /* Preto suave (Material Design) */
+}
+
+/* 2. Muda a cor do cartão branco para cinza escuro */
+body.dark-mode .policy-box {
+    background-color: #1E1E1E; /* Cinza escuro para destacar do fundo */
+    border: 1px solid #333; /* Borda sutil */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra mais forte */
+}
+
+/* 3. Ajusta a cor do título principal no cabeçalho */
+body.dark-mode .policy-header h2 {
+    color: #9D7CE3; /* Um roxo mais claro para dar leitura no fundo escuro */
+}
+
+/* 4. Ajusta a cor do subtítulo */
+body.dark-mode .policy-header .subtitle {
+    color: #BBB;
+}
+
+/* 5. Ajusta a cor dos textos gerais (p, li) */
+body.dark-mode .policy-content,
+body.dark-mode .policy-content p,
+body.dark-mode .policy-content li {
+    color: #E0E0E0; /* Branco gelo para leitura confortável */
+}
+
+/* 6. Ajusta os Títulos H3 (que eram verde escuro) */
+body.dark-mode .policy-content h3 {
+    color: var(--verde-claro); /* Usa o verde claro, que brilha mais no escuro */
+}
+
+/* 7. Ajusta os negritos (strong) */
+body.dark-mode .policy-content strong {
+    color: #9D7CE3; /* Roxo claro */
+}
+/* ---------------------------------------------------------------- */
+/* ESTILOS EXCLUSIVOS DA PÁGINA FAQ (ACORDEÃO) */
+/* Adicione ao final do politicas.css */
+/* ---------------------------------------------------------------- */
+
+/* Estilo do container de cada pergunta */
+details {
+    background-color: white;
+    margin-bottom: 15px;
+    border: 1px solid #DDD;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* O Cabeçalho (A Pergunta) */
+summary {
+    list-style: none; /* Remove a seta padrão feia do navegador */
+    padding: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--roxo);
+    font-size: 1.1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Remove a seta padrão no Chrome/Safari */
+summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Efeito Hover na pergunta */
+summary:hover {
+    background-color: #f9f9f9;
+}
+
+/* Animação da setinha do Bootstrap Icon */
+details[open] summary i {
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+details summary i {
+    transition: 0.3s;
+    color: var(--verde-claro);
+}
+
+/* O Corpo (A Resposta) */
+.faq-answer {
+    padding: 0 20px 20px 20px;
+    border-top: 1px solid #f0f0f0;
+    color: #555;
+    background-color: #fff;
+}
+.faq-answer p {
+    margin-top: 15px;
+}
+
+
+/* --- DARK MODE PARA O FAQ --- */
+
+/* Fundo da pergunta no modo escuro */
+body.dark-mode details {
+    background-color: #252525; /* Um pouco mais claro que o box principal */
+    border-color: #444;
+}
+
+/* Texto da pergunta (Summary) */
+body.dark-mode summary {
+    color: #9D7CE3; /* Roxo claro */
+    background-color: #252525;
+}
+
+body.dark-mode summary:hover {
+    background-color: #333;
+}
+
+/* Área da resposta */
+body.dark-mode .faq-answer {
+    background-color: #252525;
+    border-top: 1px solid #444;
+    color: #E0E0E0;
+}

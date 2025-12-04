@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bora Role</title>
+    <title>Bora Role - Proteção de Dados</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="entrar.css">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="politicas.css"> <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <script src="script.js"></script>
 </head>
@@ -14,53 +13,53 @@
     <div id="medias" onclick="nightMode()">
         <i class="bi bi-moon-fill"></i>
     </div> 
-
+    
     <header>
         <div id="logo">
-            <a href="index.html"><img src="img/logo_nome todo_roxo.png" alt="Logo do site bora role"></a>
+            <a href="index.html"><img src="img/logo_nome todo_roxo.png" alt="Logo do site bora de role"></a>
         </div>
         <nav>
             <menu>
-
-                <a href="about.html">
-                    <li>SOBRE NÓS</li>
-                </a>
-                <a href="blog_SantosRegiao.html">
-                    <li>SANTOS E REGIÃO</li>
-                </a>
-                <a href="anuncie.html">
-                    <li>ANUNCIE CONOSCO</li>
-                </a>
+                <a href="about.html"><li class="list_reset">SOBRE NÓS</li></a>
+                <a href="blog_SantosRegiao.html"><li class="list_reset">SANTOS E REGIÃO</li></a>
+                <a href="anuncie.html"><li class="list_reset">ANUNCIE CONOSCO</li></a>
             </menu>
         </nav>
         <div id="log">
             <a href="entrar.html" id="botao_login">ENTRAR</a>
-            <a href="cadastro.html" id="cadastre_se">Cadastre-se</a>
+            <a href="cadastro.html" id="cadastre_se" style="font-weight: bold;">Cadastre-se</a>
         </div>
     </header>
 
-    <!-- Main -->
-    <main>
-        <div id="titulo">
-            <h1>FIQUE POR DENTRO DO SEU ROLE</h1>
-            <h3>Não tem uma conta ainda? <a href="cadastro.html">Criar</a></h3>
-        </div>
-        
-        <div id="formulario">
-        <form>
-            <label class="conteudo_form"> E-mail:</label>
-            <input class="conteudo_form" type="text" placeholder="Digite seu e-mail">
-            <label class="conteudo_form">Senha:</label>
-            <input class="conteudo_form" type="password" placeholder="Digite sua senha">
-        </form>
-        <a id="esqueceu_senha" href="#" style="font-size: 16px;">Esqueceu a senha?</a>
-        <button id="botao_acao_entrar">ENTRAR</button>
-        </div>
-        
+    <main class="main-policy">
+        <section class="policy-box">
+    <div class="policy-header">
+        <h2>Regras para Divulgação de Eventos</h2>
+        <span class="subtitle">Diretrizes para anunciantes e usuários</span>
+    </div>
 
+    <div class="policy-content">
+        <p>Para manter a qualidade e a segurança da comunidade <strong>Bora Role</strong>, estabelecemos regras claras para a divulgação de eventos em nossa plataforma.</p>
+
+        <h3>1. Veracidade das Informações</h3>
+        <p>Todos os eventos cadastrados devem conter informações reais sobre local, data, horário e valores. A divulgação de informações falsas resultará no banimento imediato da conta.</p>
+
+        <h3>2. Conteúdo Proibido</h3>
+        <p>É estritamente proibida a divulgação de eventos que:</p>
+        <ul>
+            <li>Incentivem violência, discriminação ou discurso de ódio.</li>
+            <li>Envolvam atividades ilegais perante a legislação brasileira.</li>
+            <li>Tenham cunho explicitamente sexual sem a devida classificação indicativa e filtros.</li>
+        </ul>
+
+        <h3>3. Qualidade de Imagem</h3>
+        <p>As imagens utilizadas nos banners devem ter boa resolução e não podem conter marcas d'água de terceiros sem autorização. O Bora Role se reserva o direito de remover imagens de baixa qualidade.</p>
+
+        <h3>4. Cancelamentos</h3>
+        <p>Em caso de cancelamento do evento, o organizador deve atualizar o status na plataforma imediatamente para evitar transtornos aos usuários.</p>
+    </div>
+</section>
     </main>
-    
-    <!-- Footer -->
 
     <footer>
         <aside id="footer_logo">
