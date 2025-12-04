@@ -80,7 +80,6 @@ body {
   border: 2px solid #D98E04;
   border-radius: 15px;
   overflow: hidden;
-  background: #fff;
   display: flex;
   flex-direction: column;
 
@@ -101,6 +100,8 @@ body {
   padding: 10px;
   color: #6b4cad;
   text-align: center;
+
+  margin-top: 20px;
 }
 
 #card_conteudo a {
@@ -165,4 +166,7 @@ body {
   }
 }
 
+body{
+
+}
 
