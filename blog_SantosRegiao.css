@@ -31,7 +31,7 @@ body {
   background-position: center;
 }
 
-/* Próximos Roles */
+/*-------------- Próximos Roles ---------------*/
 #proximosRoles {
   width: 90%;
   margin: auto;
@@ -60,38 +60,55 @@ body {
   justify-content: flex-end;
 }
 
-/* Cards de notícias */
-#card_proximoRole {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 20px;
+/* ------------------------ Cards de notícias ---------------- */
+
+#foraDoCard {
+  margin: 20px 0px;
+}
+
+#cards_todasNoticias {
   width: 100%;
+  min-height: 23rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
 }
 
-.role_card {
-  display: flex;
-  flex-direction: row;
-  border: 2px solid var(--marrom-claro);
-  border-radius: 10px;
+#card_noticia {
+  border: 2px solid #D98E04;
+  border-radius: 15px;
   overflow: hidden;
-  background: #000;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+
+  margin: 0px 20px;
 }
 
-.role_card img {
-  width: 40%;
+.card_img {
+  width: 100%;
+  height: 180px;
   object-fit: cover;
 }
 
-.proximoRole_card_conteudo {
-  flex: 1;
-  padding: 10px;
+#card_conteudo {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: #6b4cad;
+  text-align: center;
 }
 
-/* Responsividade */
+#card_conteudo a {
+  text-decoration: none;
+  color: #04BF8A;
+}
+
+/* ----------- Responsividade --------------- */
 @media (max-width: 1024px) {
   #principal_role_carossel {
     height: 300px;
@@ -103,6 +120,9 @@ body {
   .role_card img {
     width: 100%;
     height: auto;
+  }
+  #cards_todasNoticias {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
 }
 
@@ -122,6 +142,9 @@ body {
   .noticia1 p {
     font-size: 14px;
   }
+  #cards_todasNoticias {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 480px) {
@@ -134,16 +157,12 @@ body {
   .proximoRole_card_conteudo a {
     font-size: 1.2em;
   }
+  #cards_todasNoticias {
+    grid-template-columns: 1fr;
+  }
+  #card_noticia {
+    margin: 10px 0;
+  }
 }
 
 
-/* ------------------------------------- Noticias ------------------------------------- */
-
-/* ------------------------------------- Footer ------------------------------------- */
-
-
-
-/* @media only screen and (max-width: 500px) {
-
-
-} */
