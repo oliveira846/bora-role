@@ -84,7 +84,7 @@ body {
   display: flex;
   flex-direction: column;
 
-  margin: 0px 20px;
+  margin: 0px;
 }
 
 .card_img {
@@ -97,7 +97,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: space-around;
   padding: 10px;
   color: #6b4cad;
   text-align: center;
