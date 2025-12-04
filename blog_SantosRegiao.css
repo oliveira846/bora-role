@@ -5,181 +5,136 @@
 
 /* ------------------------------------- Carrossel ------------------------------------- */
 
-#principal_role_carossel{
-    background-color: var(--roxo);
-    height: 500px;
-    margin-top: -60px;
-    background-image: url(img/BannerBlog.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-/* ------------------------------------- Carrossel ------------------------------------- */
 
-/* ------------------------------------- Proximos Eventos ------------------------------------- */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  /* Removemos min-width fixo */
+  width: 100%;
+}
 
-#proximosRoles{
-    width: 90%;
-    
-    margin: auto;
-    margin-top: 60px;
+/* Carrossel */
+#principal_role_carossel {
+  background-color: var(--roxo);
+  width: 100%;
+  height: 400px; /* reduzido para telas menores */
+  margin-top: -60px;
+  background-image: url(img/BannerBlog.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
-    display: flex;
+/* Próximos Roles */
+#proximosRoles {
+  width: 90%;
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#noticias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.noticia1 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  border-radius: 15px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* Cards de notícias */
+#card_proximoRole {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.role_card {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid var(--marrom-claro);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #000;
+}
+
+.role_card img {
+  width: 40%;
+  object-fit: cover;
+}
+
+.proximoRole_card_conteudo {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  #principal_role_carossel {
+    height: 300px;
+  }
+  .role_card {
     flex-direction: column;
-    align-items: stretch;
-    flex-wrap: nowrap;
+    text-align: center;
+  }
+  .role_card img {
+    width: 100%;
+    height: auto;
+  }
 }
 
-body{
-    min-width: 800px;
+@media (max-width: 768px) {
+  #principal_role_carossel {
+    height: 250px;
+  }
+  #noticias {
+    grid-template-columns: 1fr;
+  }
+  #card_proximoRole {
+    grid-template-columns: 1fr;
+  }
+  .noticia1 h3 {
+    font-size: 24px;
+  }
+  .noticia1 p {
+    font-size: 14px;
+  }
 }
 
-.foraDoCard{
-    justify-self: center;
-    align-self: center;
-}
-
-#card_proximoRole{
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 90%;
-    align-items: center;
-}
-
-.role_card{
-    width: 90%;
+@media (max-width: 480px) {
+  #principal_role_carossel {
     height: 200px;
-    display: flex;
-    border: 2px solid var(--marrom-claro);
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 20px;
+  }
+  .role_card {
+    margin: 10px 0;
+  }
+  .proximoRole_card_conteudo a {
+    font-size: 1.2em;
+  }
 }
-
-.role_card img{
-    width: 295px;
-}
-
-.empresas_card img{
-    width: 150px;
-    height: 100%;
-
-    
-}
-.proximoRole_card_conteudo{
-    width: 100%;
-    height: 100%;
-    padding: 5px 5px 5px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: white;
-    background-color: black;
-}
-#cortitulo{
-   color: white;
-}
-.proximoRole_card_conteudo_flex{
-    display: flex;
-    justify-content: space-between;
-
-    
-}
-#card_coluna{
-    flex-direction: column;
-}
-#card_coluna p{
-    margin-top: 5px;
-}
-.proximoRole_card_conteudo a{
-    text-decoration: none;
-    color: black;
-    font-size: 2em;
-}
-.proximoRole_card_empresa{
-    display: flex;
-
-    align-items: center;
-    justify-content: space-between;
-
-    width: 50%;
-
-    margin-top: 5px;
-    
-}
-.proximoRole_card_empresa_texto{
-    padding: 1px 7px;
-    border-radius: 20px;
-}
-
-#horario_data{
-    display: flex;
-    align-items: center;
-}
-#horario_data span{
-    margin: 0px 40px;
-}
-
-/* ------------------------------------- Proximos Eventos ------------------------------------- */
-
-/* ------------------------------------- Noticias ------------------------------------- */
-
-#sec_noticias{
-    margin: auto;
-    margin-top: 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#noticias{
-    
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin: auto;
-    margin-top: 20px;
-}
-
-.noticia1, .noticia2, .noticia3, .noticia4, .noticia5{
-    display: flex;
-    
-}
-
-.noticia1{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 50px;
-    margin: 10px;
-    grid-row: 1 / 5;
-    grid-column: 1 / 6;
-    flex-direction: column;
-    justify-content: end;
-    border-radius: 20px;
-    width: 100%;
-
-    font-size: 15px;
-    font-family: var(--secundary-font);
-    
-}
-
-.noticia1 h3{
-    font-size: 40px;
-    font-family: var(--secundary-font);
-    font-weight: normal;
-    color: aliceblue;
-}
-
-.noticia1 p{
-    font-size: 15px;
-    font-family: var(--secundary-font);
-    color: aliceblue;
-}
-
 
 
 /* ------------------------------------- Noticias ------------------------------------- */
