@@ -205,3 +205,16 @@
         font-size: 2em;
     }
 }
+/* Adicione no final do cadastro.css */
+
+.input-erro {
+    border: 1px solid red !important;
+    background-color: #ffe6e6 !important; /* Fundo levemente avermelhado */
+}
+
+.aviso-erro {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    display: block; /* O JS vai controlar o display, mas isso garante o comportamento de bloco */
+}

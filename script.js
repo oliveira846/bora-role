@@ -98,5 +98,109 @@ function nightMode() {
         mediaIcon.className = "bi bi-moon-fill";
     }
 }
+document.addEventListener("DOMContentLoaded", () => {
+    
+    // --- 1. LÓGICA DO VIACEP ---
+    const cepInput = document.getElementById("cep");
+    const enderecoInput = document.getElementById("endereco");
+    const bairroInput = document.getElementById("bairro");
+    const cidadeInput = document.getElementById("cidade");
+    const ufInput = document.getElementById("uf");
+    const msgCep = document.getElementById("msg-cep");
 
+    // Função para limpar campos
+    const limparFormularioCep = () => {
+        enderecoInput.value = "";
+        bairroInput.value = "";
+        cidadeInput.value = "";
+        ufInput.value = "";
+    }
+
+    // Quando o usuário sai do campo CEP (evento blur)
+    cepInput.addEventListener("blur", async (e) => {
+        // Remove tudo que não é número
+        let cep = e.target.value.replace(/\D/g, '');
+
+        if (cep !== "") {
+            // Expressão regular para validar formato do CEP
+            let validacep = /^[0-9]{8}$/;
+
+            if (validacep.test(cep)) {
+                // Preenche com "..." enquanto carrega
+                enderecoInput.value = "...";
+                msgCep.style.display = "none";
+
+                try {
+                    // Consulta a API
+                    const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
+                    const data = await response.json();
+
+                    if (!data.erro) {
+                        // Preenche os campos com os dados da API
+                        enderecoInput.value = data.logradouro;
+                        // Se você adicionou os campos bairro/cidade/uf no HTML:
+                        if(bairroInput) bairroInput.value = data.bairro;
+                        if(cidadeInput) cidadeInput.value = data.localidade;
+                        if(ufInput) ufInput.value = data.uf;
+                        
+                        // Foca no campo número para o usuário digitar
+                        document.getElementById("numero").focus();
+                    } else {
+                        limparFormularioCep();
+                        msgCep.innerText = "CEP não encontrado.";
+                        msgCep.style.display = "block";
+                    }
+                } catch (error) {
+                    limparFormularioCep();
+                    msgCep.innerText = "Erro ao buscar CEP.";
+                    msgCep.style.display = "block";
+                }
+            } else {
+                limparFormularioCep();
+                msgCep.innerText = "Formato de CEP inválido.";
+                msgCep.style.display = "block";
+            }
+        } else {
+            limparFormularioCep();
+        }
+    });
+
+    // 2. VALIDAÇÃO DE SENHA 
+    const senhaInput = document.getElementById("senha");
+    const confirmaInput = document.getElementById("confirma_senha");
+    const msgSenha = document.getElementById("msg-senha");
+    const msgConfirma = document.getElementById("msg-confirma");
+
+    // Valida força da senha
+    senhaInput.addEventListener("input", () => {
+        const senha = senhaInput.value;
+        
+        // Regra: Mínimo 8 caracteres (você pode adicionar mais regras aqui)
+        if (senha.length > 0 && senha.length < 8) {
+            msgSenha.style.display = "block";
+            senhaInput.classList.add("input-erro");
+        } else {
+            msgSenha.style.display = "none";
+            senhaInput.classList.remove("input-erro");
+        }
+        
+        // Se já tiver algo no confirmar senha, valida a igualdade também
+        if (confirmaInput.value !== "") {
+            validarIgualdade();
+        }
+    });
+
+    // Valida se as senhas são iguais
+    const validarIgualdade = () => {
+        if (senhaInput.value !== confirmaInput.value) {
+            msgConfirma.style.display = "block";
+            confirmaInput.classList.add("input-erro");
+        } else {
+            msgConfirma.style.display = "none";
+            confirmaInput.classList.remove("input-erro");
+        }
+    };
+
+    confirmaInput.addEventListener("input", validarIgualdade);
+});
 
