@@ -1,0 +1,342 @@
+/* instagram_web.css */
+
+/* Variáveis de Cores do Projeto Bora de Role */
+:root {
+    --roxo: #7756BF;
+    --verde-claro: #04BF8A;
+    --bg-color: #FAFAFA;
+    --border-color: #DBDBDB;
+    --text-primary: #262626;
+    --text-secondary: #8E8E8E;
+    --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--font-stack);
+    color: var(--text-primary);
+    display: flex; /* Layout Flex para Sidebar + Conteúdo */
+    min-height: 100vh;
+}
+
+/* --- SIDEBAR (Barra Lateral Esquerda) --- */
+.sidebar {
+    width: 245px;
+    height: 100vh;
+    background-color: white;
+    border-right: 1px solid var(--border-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 12px;
+    z-index: 10;
+}
+
+.logo-area {
+    padding: 25px 12px;
+    margin-bottom: 20px;
+}
+
+.insta-logo {
+    font-family: 'Billabong', cursive; /* Fonte clássica do Insta ou similar */
+    /* Se não tiver a fonte Billabong, usa uma serifada cursiva */
+    font-family: cursive; 
+    font-size: 1.8rem;
+    color: var(--text-primary);
+}
+
+.nav-links {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    color: var(--text-primary);
+    border-radius: 8px;
+    transition: background-color 0.2s;
+    font-size: 1rem;
+}
+
+.nav-item:hover {
+    background-color: #f2f2f2;
+}
+
+.nav-item i {
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+/* Destaque para o link ativo (Perfil) */
+.nav-item.active {
+    font-weight: bold;
+}
+
+.mini-profile-pic {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.nav-footer {
+    padding-top: 10px;
+    border-top: 1px solid transparent;
+}
+
+/* --- CONTEÚDO PRINCIPAL (Centro) --- */
+.main-content {
+    margin-left: 245px; /* Empurra o conteúdo para a direita da sidebar */
+    width: calc(100% - 245px);
+    max-width: 935px; /* Largura padrão do container do Instagram */
+    margin-right: auto; /* Centraliza se a tela for muito grande */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header do Perfil */
+.profile-header {
+    display: flex;
+    margin-bottom: 44px;
+    align-items: flex-start;
+}
+
+.profile-image-container {
+    flex-basis: 290px; /* Largura da coluna da foto */
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.profile-image-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    /* Borda colorida característica dos stories */
+    padding: 2px;
+    border: 2px solid white;
+    outline: 3px solid var(--roxo); 
+}
+
+.profile-image-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* ou cover, dependendo da logo */
+    border-radius: 50%;
+}
+
+.profile-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Linha Superior (Username + Botões) */
+.profile-top-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.username {
+    font-weight: 300;
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+
+.profile-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-primary {
+    background-color: var(--verde-claro);
+    color: white;
+    border: none;
+    padding: 7px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.btn-secondary, .btn-icon {
+    background-color: #efefef;
+    color: black;
+    border: none;
+    padding: 7px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+/* Linha do Meio (Estatísticas) */
+.profile-stats {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 40px;
+    font-size: 1rem;
+}
+
+/* Linha de Baixo (Bio) */
+.profile-bio .real-name {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.profile-bio p {
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+
+.bio-link {
+    color: #00376b;
+    font-weight: 600;
+}
+
+/* Destaques (Highlights) */
+.highlights-container {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 44px;
+    padding-left: 20px;
+}
+
+.highlight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.highlight-circle {
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: var(--roxo);
+}
+
+.highlight span {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Abas de Navegação (Tabs) */
+.profile-tabs {
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 20px;
+}
+
+.tab-item {
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: var(--text-secondary);
+    border-top: 1px solid transparent;
+    margin-top: -1px;
+}
+
+.tab-item.active {
+    color: var(--text-primary);
+    border-top: 1px solid var(--text-primary);
+    font-weight: bold;
+}
+
+/* GRID DE FOTOS */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 Colunas iguais */
+    gap: 28px; /* Espaçamento desktop padrão do Insta */
+    padding-bottom: 50px;
+}
+
+.gallery-item {
+    position: relative;
+    aspect-ratio: 1 / 1; /* Garante que seja quadrado */
+    background-color: #efefef;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Efeito Hover (Overlay Escuro com Likes) */
+.gallery-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    opacity: 0; /* Invisível por padrão */
+    transition: opacity 0.2s ease;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+/* Footer */
+.web-footer {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    padding: 20px 0;
+}
+
+/* Responsividade Básica */
+@media (max-width: 850px) {
+    .sidebar { width: 70px; align-items: center; }
+    .nav-item span, .insta-logo { display: none; } /* Esconde texto, deixa ícones */
+    .logo-area { margin-bottom: 0; }
+    .main-content { margin-left: 70px; width: calc(100% - 70px); }
+    .profile-header { flex-direction: column; align-items: center; text-align: center; }
+    .profile-image-container { margin-right: 0; margin-bottom: 20px; flex-basis: auto; }
+    .profile-stats { justify-content: center; }
+    .profile-top-row { flex-direction: column; }
+}
