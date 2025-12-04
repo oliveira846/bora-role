@@ -8,7 +8,8 @@
 #principal_role_carossel{
     background-color: var(--roxo);
     height: 500px;
-    background-image: url(img/Banner.png);
+    margin-top: -60px;
+    background-image: url(img/BannerBlog.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -41,11 +42,11 @@ body{
 #card_proximoRole{
     align-self: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px;
-    width: 80%;
+    width: 90%;
+    align-items: center;
 }
 
 .role_card{
@@ -129,6 +130,9 @@ body{
 #sec_noticias{
     margin: auto;
     margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #noticias{
@@ -136,15 +140,8 @@ body{
     display: flex;
     flex-direction: column;
     width: 80%;
-    width: 70%;
-    height: 900px;
     margin: auto;
     margin-top: 20px;
-
-    /* display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 30fr 30fr 30fr 30fr 30fr 30fr; */
-
 }
 
 .noticia1, .noticia2, .noticia3, .noticia4, .noticia5{
@@ -191,18 +188,7 @@ body{
 
 
 
-/* @media (max-width: 500px) {
+/* @media only screen and (max-width: 500px) {
 
-    #noticias{
-    
-        width: 80%;
-        height: 900px;
-    
-        margin: auto;
-        margin-top: 20px;
-    
-        display: flex;
-        flex-direction: column;
-    
-    }
+
 } */
